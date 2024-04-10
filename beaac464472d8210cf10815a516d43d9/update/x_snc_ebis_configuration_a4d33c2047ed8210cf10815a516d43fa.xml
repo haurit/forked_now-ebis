@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration">
+    <x_snc_ebis_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <create>false</create>
+        <delete>true</delete>
+        <direction>out</direction>
+        <number>EBISCFG00000002</number>
+        <sys_class_name>x_snc_ebis_configuration</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-10 11:05:34</sys_created_on>
+        <sys_id>a4d33c2047ed8210cf10815a516d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_configuration_a4d33c2047ed8210cf10815a516d43fa</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-10 11:05:34</sys_updated_on>
+        <table>cmdb_rel_ci</table>
+        <update>false</update>
+    </x_snc_ebis_configuration>
+</record_update>
