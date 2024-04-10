@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_ebis.user" name="x_snc_ebis.user">875d0ce4472d8210cf10815a516d4303</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-10 08:17:12</sys_created_on>
+        <sys_id>cb5d0ce4472d8210cf10815a516d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>875d0ce4472d8210cf10815a516d4303</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_embedded_help_role_cb5d0ce4472d8210cf10815a516d4304</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-10 08:17:12</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

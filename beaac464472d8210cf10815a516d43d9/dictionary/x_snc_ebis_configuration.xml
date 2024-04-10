@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="27d1706c47ad8210cf10815a516d4320" extends="sys_metadata" label="Configuration" max_length="40" name="x_snc_ebis_configuration" type="collection">
+        <element label="Active" max_length="255" name="active" type="boolean"/>
+        <element label="Create" max_length="255" name="create" type="boolean"/>
+        <element label="Delete" max_length="255" name="delete" type="boolean"/>
+        <element choice="1" label="Direction" mandatory="true" max_length="40" name="direction" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inbound" sequence="1" value="in"/>
+                <element inactive_on_update="false" label="Outbound" sequence="2" value="out"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="allow_public=true" label="Table" mandatory="true" max_length="80" name="table" type="table_name"/>
+        <element label="Update" max_length="255" name="update" type="boolean"/>
+    </element>
+</database>
