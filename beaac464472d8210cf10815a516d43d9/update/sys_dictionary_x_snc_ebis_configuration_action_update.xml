@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="direction" table="x_snc_ebis_configuration">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="action_update" table="x_snc_ebis_configuration">
         <active>true</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>1</choice>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Direction</column_label>
+        <column_label>Update</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,15 +21,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>direction</element>
+        <element>action_update</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
+        <internal_type display_value="">boolean</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
         <name>x_snc_ebis_configuration</name>
         <next_element/>
         <primary>false</primary>
@@ -46,14 +46,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
-        <sys_created_on>2024-04-10 11:02:43</sys_created_on>
-        <sys_name>Direction</sys_name>
+        <sys_created_on>2024-04-10 18:50:25</sys_created_on>
+        <sys_name>Update</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name>sys_dictionary_x_snc_ebis_configuration_direction</sys_update_name>
+        <sys_update_name>sys_dictionary_x_snc_ebis_configuration_action_update</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-10 11:02:45</sys_updated_on>
+        <sys_updated_on>2024-04-10 18:50:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

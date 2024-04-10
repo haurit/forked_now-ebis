@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="active" table="x_snc_ebis_configuration">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="action_insert" table="x_snc_ebis_configuration">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -8,7 +8,7 @@
         <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Active</column_label>
+        <column_label>Insert</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,7 +21,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>active</element>
+        <element>action_insert</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -46,14 +46,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
-        <sys_created_on>2024-04-10 11:02:43</sys_created_on>
-        <sys_name>Active</sys_name>
+        <sys_created_on>2024-04-10 18:50:25</sys_created_on>
+        <sys_name>Insert</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name>sys_dictionary_x_snc_ebis_configuration_active</sys_update_name>
+        <sys_update_name>sys_dictionary_x_snc_ebis_configuration_action_insert</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-10 11:02:43</sys_updated_on>
+        <sys_updated_on>2024-04-10 18:50:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
