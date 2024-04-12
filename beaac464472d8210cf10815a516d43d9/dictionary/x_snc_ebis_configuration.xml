@@ -4,7 +4,7 @@
         <element label="Insert" max_length="255" name="action_insert" type="boolean"/>
         <element label="Update" max_length="255" name="action_update" type="boolean"/>
         <element label="Active" max_length="255" name="active" type="boolean"/>
-        <element choice="1" label="Direction" max_length="40" name="direction" type="choice">
+        <element choice="1" label="Direction" mandatory="true" max_length="40" name="direction" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Inbound" sequence="1" value="in"/>
                 <element inactive_on_update="false" label="Outbound" sequence="2" value="out"/>

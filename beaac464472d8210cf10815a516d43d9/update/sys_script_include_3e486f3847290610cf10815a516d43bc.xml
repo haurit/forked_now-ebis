@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ebis.GlideRecordPayloadUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Allows easy conversion from GlideRecord to JSON string</description>
+        <name>GlideRecordPayloadUtil</name>
+        <script><![CDATA[class GlideRecordPayloadUtil {
+	constructor(gr) {
+		this._tableName = gr.getTableName();
+		this._sysID = gr.getUniqueValue();
+		this._fieldNames = gr.getElements()
+			.map(element => element.getName())
+			.filter(fieldName => fieldName.indexOf('sys_') != 0); // exclude all fields starting with sys_
+	}
+
+	toJSON() {
+		return JSON.stringify(
+			new global.GlideQuery(this._tableName)
+				.get(this._sysID, this._fieldNames)
+				.orElse({'ERROR': 'Record not found'})
+		);
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-11 19:06:39</sys_created_on>
+        <sys_id>3e486f3847290610cf10815a516d43bc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>GlideRecordPayloadUtil</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_script_include_3e486f3847290610cf10815a516d43bc</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-12 07:28:02</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -9,19 +9,19 @@
         <name>EventRegistryUtil</name>
         <script><![CDATA[class EventRegistryUtil {
 	constructor() {
-		this.gqEventRegistry = new global.GlideQuery('sysevent_register');
+		this._gqEventRegistry = new global.GlideQuery('sysevent_register');
 	}
 
-	insertOrUpdate(suffix, tableName, firedBy, description, priority = 100) {
-		const eventName = [gs.getCurrentScopeName(), suffix].join('.');
-		const sysID = this.gqEventRegistry
+	insertOrUpdate(suffix, eventName, tableName, firedBy, description, priority = 100) {
+		//gs.warn(`DVD suffix ${suffix}, eventName ${eventName}, tableName ${tableName}, firedBy ${firedBy}, description ${description}, priority ${priority}`);
+		const sysID = this._gqEventRegistry
 			.where('event_name', eventName)
 			.where('table', tableName)
 			.selectOne()
 			.orElse({'sys_id': null})
 			.sys_id;
 		
-		this.gqEventRegistry.insertOrUpdate({
+		this._gqEventRegistry.insertOrUpdate({
 			'sys_id': sysID,
 			'suffix': suffix,
 			'event_name': eventName,
@@ -31,19 +31,26 @@
 			'priority': priority
 		});
 	}
+
+	delete(eventName, tableName) {
+		this._gqEventRegistry
+			.where('event_name', eventName)
+			.where('table', tableName)
+			.deleteMultiple();
+	}
 }
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-10 11:43:04</sys_created_on>
         <sys_id>18f7b82447ed8210cf10815a516d4364</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>EventRegistryUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_18f7b82447ed8210cf10815a516d4364</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-10 20:00:15</sys_updated_on>
+        <sys_updated_on>2024-04-12 07:57:58</sys_updated_on>
     </sys_script_include>
 </record_update>
