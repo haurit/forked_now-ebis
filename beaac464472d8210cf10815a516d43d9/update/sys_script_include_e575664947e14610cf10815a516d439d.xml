@@ -2,17 +2,19 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <active>true</active>
-        <api_name>x_snc_ebis.ScriptActionUtil</api_name>
+        <api_name>x_snc_ebis.OutboundEventUtil</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
-        <description>Process EBIS events</description>
-        <name>ScriptActionUtil</name>
-        <script><![CDATA[class ScriptActionUtil {
+        <description>Process outbound EBIS events</description>
+        <name>OutboundEventUtil</name>
+        <script><![CDATA[class OutboundEventUtil {
 	constructor() {
 	}
 
-	process(grEvent) {
-		gs.info(`Processing ${grEvent.getDisplayValue()}`);
+	process(eventName, table, payload) {
+		// 'out' here becomes 'in' for the target
+		const inboundEventName = eventName.replace('.out.', '.in.');
+		gs.info(`Processing outbound event ${inboundEventName} ${table} ${payload}`);
 	}
 }
 ]]></script>
@@ -20,13 +22,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-12 08:38:42</sys_created_on>
         <sys_id>e575664947e14610cf10815a516d439d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>ScriptActionUtil</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>OutboundEventUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_e575664947e14610cf10815a516d439d</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-12 11:29:59</sys_updated_on>
+        <sys_updated_on>2024-04-15 08:43:26</sys_updated_on>
     </sys_script_include>
 </record_update>

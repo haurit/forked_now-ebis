@@ -4,7 +4,7 @@
         <derived_priority>100</derived_priority>
         <description>Inbound update action to modify a record in this instance</description>
         <event_name>x_snc_ebis.in.update</event_name>
-        <fired_by>Inbound integration with this instance</fired_by>
+        <fired_by>Inbound EBIS integration with this instance</fired_by>
         <priority>100</priority>
         <queue/>
         <suffix>in.update</suffix>
@@ -12,14 +12,14 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-12 08:12:54</sys_created_on>
         <sys_id>fb8f120547e14610cf10815a516d4310</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_snc_ebis.in.update</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sysevent_register_fb8f120547e14610cf10815a516d4310</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-12 09:12:05</sys_updated_on>
-        <table>incident</table>
+        <sys_updated_on>2024-04-15 07:42:56</sys_updated_on>
+        <table/>
     </sysevent_register>
 </record_update>
