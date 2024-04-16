@@ -21,7 +21,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Add Event Queue Trigger Business Rules</name>
+        <name>Add event trigger Business Rules</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -40,7 +40,8 @@
 			configuration.getBusinessRuleName(action),
 			configuration.getTableName(),
 			action,
-			configuration.getEventName(action)
+			configuration.getEventName(action),
+			configuration.getOptions()
 		);
 	});
 	
@@ -59,15 +60,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>26a32d3c47210610cf10815a516d4302</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Add Event Queue Trigger Business Rules</sys_name>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Add event trigger Business Rules</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_26a32d3c47210610cf10815a516d4302</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-12 07:49:55</sys_updated_on>
+        <sys_updated_on>2024-04-15 14:31:43</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

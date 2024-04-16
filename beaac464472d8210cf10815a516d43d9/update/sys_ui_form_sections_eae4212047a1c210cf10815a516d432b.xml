@@ -28,6 +28,20 @@
             <sys_updated_by>david.van.damme</sys_updated_by>
             <sys_updated_on>2024-04-10 14:39:44</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>david.van.damme</sys_created_by>
+            <sys_created_on>2024-04-15 14:35:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c3d3538e47e50210cf10815a516d4330</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ebis_configuration" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">eae4212047a1c210cf10815a516d432b</sys_ui_form>
+            <sys_ui_section caption="Options" display_value="Options" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">c7d3538e47e50210cf10815a516d432c</sys_ui_section>
+            <sys_updated_by>david.van.damme</sys_updated_by>
+            <sys_updated_on>2024-04-15 14:35:20</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_snc_ebis_configuration</name>
             <roles/>
