@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>false</disabled>
+        <field>ignore_unknown_fields</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-17 11:58:35</sys_created_on>
+        <sys_data_policy display_value="Options available for Inbound only">99b2c97247a1c210cf10815a516d43a6</sys_data_policy>
+        <sys_id>1713c1b247a1c210cf10815a516d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ignore_unknown_fields</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_data_policy_rule_1713c1b247a1c210cf10815a516d436d</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-17 11:58:35</sys_updated_on>
+        <table>x_snc_ebis_configuration</table>
+    </sys_data_policy_rule>
+</record_update>

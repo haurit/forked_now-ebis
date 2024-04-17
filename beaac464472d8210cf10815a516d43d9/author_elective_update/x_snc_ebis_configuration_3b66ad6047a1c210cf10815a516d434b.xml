@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration">
+    <x_snc_ebis_configuration action="DELETE">
+        <number>EBISCFG00000008</number>
+        <sys_class_name>x_snc_ebis_configuration</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-10 14:46:25</sys_created_on>
+        <sys_id>3b66ad6047a1c210cf10815a516d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_configuration_3b66ad6047a1c210cf10815a516d434b</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-10 14:46:25</sys_updated_on>
+    </x_snc_ebis_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_configuration_3b66ad6047a1c210cf10815a516d434b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration"><x_snc_ebis_configuration action="INSERT_OR_UPDATE"><number>EBISCFG00000008</number><sys_class_name>x_snc_ebis_configuration</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-04-10 14:46:25</sys_created_on><sys_id>3b66ad6047a1c210cf10815a516d434b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>x_snc_ebis_configuration_3b66ad6047a1c210cf10815a516d434b</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-04-10 14:46:25</sys_updated_on></x_snc_ebis_configuration></record_update>]]></payload>
+        <payload_hash>-2005348687</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-10 14:46:25</sys_created_on>
+        <sys_id>a0766d6047a1c210cf10815a516d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ec8796f6a0000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-10 14:46:25</sys_updated_on>
+        <type>Configuration</type>
+        <update_guid>a4766d6025a1c21032fd5c4953a481fa</update_guid>
+        <update_guid_history>a4766d6025a1c21032fd5c4953a481fa:-2005348687</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">729821b047610610cf10815a516d4352</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-11 09:34:20</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_configuration">x_snc_ebis_configuration</sys_db_object>
+        <sys_id>3607868301754400a56205b0af290000</sys_id>
+        <sys_metadata>3b66ad6047a1c210cf10815a516d434b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_configuration_3b66ad6047a1c210cf10815a516d434b</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_configuration_3b66ad6047a1c210cf10815a516d434b">a0766d6047a1c210cf10815a516d43fb</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-11 09:34:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
