@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_snc_ebis.out.update</event_name>
+        <name>EBIS Outbound Update</name>
+        <order>100</order>
+        <script><![CDATA[new OutboundEventUtil().process(event.getValue('name'), event.getValue('parm1'), event.getValue('parm2'));
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-12 11:36:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2b3e8bcd47654610cf10815a516d4344</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>EBIS Outbound Update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sysevent_script_action_2b3e8bcd47654610cf10815a516d4344</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-15 08:33:34</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

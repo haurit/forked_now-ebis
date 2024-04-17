@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ebis.InboundEventUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Process inbound EBIS events</description>
+        <name>InboundEventUtil</name>
+        <script><![CDATA[class InboundEventUtil {
+	constructor() {
+	}
+
+	process(action, tableName, payload) {
+		// first check if there is a matching configuration record, if not, we're not doing anything with the event
+		const configuration = ConfigurationUtil.find('in', action, tableName);
+		if (configuration) {
+			const recordObject = JSON.parse(payload);
+			if (action == 'insert') {
+				this._insertRecord(configuration, recordObject);
+			} else if (action == 'update') {
+				this._updateRecord(configuration, recordObject);
+			} else if (action == 'delete') {
+				this._deleteRecord(configuration, recordObject);
+			} else {
+				throw(`Unknown action '${action}' to process inbound event.`);
+			}
+		} else {
+			throw(`No configuration found to process inbound event '${action}' on ${tableName} table.`);
+		}
+	}
+
+	_insertRecord(configuration, recordObject) {
+		let grTable = new GlideRecord(configuration.getTableName());
+		grTable.setWorkflow(configuration.getOption('run_business_rules'));
+
+		if (configuration.getOption('preserve_sys_id')) {
+			if (recordObject.sys_id) {
+				grTable.setNewGuidValue(recordObject.sys_id);
+				delete recordObject.sys_id;
+			} else {
+				throw('Trying to preserve the sys_id, but it is missing from the payload.');
+			}
+		} else {
+			delete recordObject.sys_id;
+		}
+		this._getFields(configuration, recordObject)
+			.forEach(function (field) {
+				grTable.setValue(field, recordObject[field]);
+			});
+		return grTable.insert();
+	}
+
+	_updateRecord(configuration, recordObject) {
+		let gqTable = new global.GlideQuery(configuration.getTableName());
+		if (!configuration.getOption('run_business_rules')) {
+			gqTable.disableWorkflow();
+		}
+		let updateObject = this._getFields(configuration, recordObject)
+			.reduce(function (filteredObject, field) {
+				filteredObject[field] = recordObject[field];
+				return filteredObject;
+			}, {});
+		return gqTable
+			.where('sys_id', recordObject.sys_id)
+			.update(updateObject);
+	}
+
+	_deleteRecord(configuration, recordObject) {
+		return new global.GlideQuery(configuration.getTableName())
+			.where('sys_id', recordObject.sys_id)
+			.deleteMultiple();
+	}
+
+	_getFields(configuration, recordObject) {
+		// if Ignore unknown fields option is set to true, remove any fields that do not exist on target table
+		if (configuration.getOption('ignore_unknown_fields')) {
+			const grTable = new GlideRecord(configuration.getTableName());
+			return Object.keys(recordObject)
+				.filter(field => (grTable.getElement(field) != null));
+		} else {
+			return Object.keys(recordObject);
+		}
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-15 09:35:57</sys_created_on>
+        <sys_id>2d5fca0247e10210cf10815a516d4393</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>InboundEventUtil</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_script_include_2d5fca0247e10210cf10815a516d4393</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-16 13:22:37</sys_updated_on>
+    </sys_script_include>
+</record_update>
