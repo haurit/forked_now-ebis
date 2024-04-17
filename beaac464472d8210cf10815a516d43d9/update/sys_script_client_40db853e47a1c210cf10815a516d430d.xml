@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Show error message when no action is selected</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>At least one action is mandatory</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	if (!g_form.getBooleanValue('action_insert') &&
+		!g_form.getBooleanValue('action_update') &&
+		!g_form.getBooleanValue('action_delete')) {
+		g_form.addErrorMessage("At least one action should be selected.");
+		return false;
+	} else {
+		g_form.clearMessages();
+		return true;
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-17 12:37:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>40db853e47a1c210cf10815a516d430d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>At least one action is mandatory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_script_client_40db853e47a1c210cf10815a516d430d</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-17 13:53:08</sys_updated_on>
+        <table>x_snc_ebis_configuration</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
