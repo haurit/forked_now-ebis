@@ -4,9 +4,9 @@
         <can_delegate>true</can_delegate>
         <description/>
         <elevated_privilege>false</elevated_privilege>
-        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
+        <limit_concurrent_sessions>false</limit_concurrent_sessions>
         <name>x_snc_ebis.admin</name>
         <scoped_admin>false</scoped_admin>
         <suffix>x_snc_ebis.admin</suffix>
