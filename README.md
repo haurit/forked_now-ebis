@@ -1,4 +1,4 @@
-![image](https://github.com/DaGolle/now-EventBasedInstanceSynchronizer/assets/14361888/d621d649-6210-4136-a6a9-d31f194013ef)# ServiceNow - Event Based Instance Synchronizer (EBIS)
+# ServiceNow - Event Based Instance Synchronizer (EBIS)
 Synchronize records between ServiceNow instances based on events.
 The reason this app came to life is the need to be able to capture deletes in one ServiceNow instance and transmit and execute them on another ServiceNow instance (to make sure CI Relationships are properly synchronised for example).
 
