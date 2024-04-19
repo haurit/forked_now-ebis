@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Configuration" language="en" table="x_snc_ebis_configuration">
+    <sys_documentation element="payload" label="Payload" language="en" table="var__m_sys_hub_action_input_271e128247250210cf10815a516d431f">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element/>
+            <element>payload</element>
             <help/>
             <hint/>
-            <label>Configuration</label>
+            <label>Payload</label>
             <language>en</language>
-            <name>x_snc_ebis_configuration</name>
-            <plural>Configurations</plural>
+            <name>var__m_sys_hub_action_input_271e128247250210cf10815a516d431f</name>
+            <plural/>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>david.van.damme</sys_created_by>
-            <sys_created_on>2024-04-10 14:36:30</sys_created_on>
-            <sys_id>7b0003df93610210988cb5edfaba102d</sys_id>
+            <sys_created_on>2024-04-15 10:40:32</sys_created_on>
+            <sys_id>af1e128247250210cf10815a516d432e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Configuration</sys_name>
+            <sys_name>Payload</sys_name>
             <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
             <sys_policy/>
             <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-            <sys_update_name>sys_documentation_x_snc_ebis_configuration__en</sys_update_name>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_271e128247250210cf10815a516d431f_payload_en</sys_update_name>
             <sys_updated_by>david.van.damme</sys_updated_by>
-            <sys_updated_on>2024-04-10 14:36:30</sys_updated_on>
+            <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
