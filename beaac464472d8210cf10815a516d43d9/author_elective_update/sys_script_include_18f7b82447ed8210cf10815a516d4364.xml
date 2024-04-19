@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_snc_ebis.EventRegistryUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Helper class to manage Event Registry [sysevent_register] records</description>
+        <name>EventRegistryUtil</name>
+        <script><![CDATA[class EventRegistryUtil {
+	constructor() {
+		this._gqEventRegistry = new global.GlideQuery('sysevent_register');
+	}
+
+	insertOrUpdate(suffix, eventName, tableName, firedBy, description, priority = 100) {
+		//gs.warn(`DVD suffix ${suffix}, eventName ${eventName}, tableName ${tableName}, firedBy ${firedBy}, description ${description}, priority ${priority}`);
+		const sysID = this._gqEventRegistry
+			.where('event_name', eventName)
+			.where('table', tableName)
+			.selectOne()
+			.orElse({'sys_id': null})
+			.sys_id;
+		
+		this._gqEventRegistry.insertOrUpdate({
+			'sys_id': sysID,
+			'suffix': suffix,
+			'event_name': eventName,
+			'table': tableName,
+			'fired_by': firedBy,
+			'description': description,
+			'priority': priority
+		});
+	}
+
+	delete(eventName, tableName) {
+		this._gqEventRegistry
+			.where('event_name', eventName)
+			.where('table', tableName)
+			.deleteMultiple();
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-10 11:43:04</sys_created_on>
+        <sys_id>18f7b82447ed8210cf10815a516d4364</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>EventRegistryUtil</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_script_include_18f7b82447ed8210cf10815a516d4364</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-12 09:03:17</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>sys_script_include_18f7b82447ed8210cf10815a516d4364</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_snc_ebis.EventRegistryUtil&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Helper class to manage Event Registry [sysevent_register] records&lt;/description&gt;&lt;name&gt;EventRegistryUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[class EventRegistryUtil {
+	constructor() {
+		this._gqEventRegistry = new global.GlideQuery('sysevent_register');
+	}
+
+	insertOrUpdate(suffix, eventName, tableName, firedBy, description, priority = 100) {
+		//gs.warn(`DVD suffix ${suffix}, eventName ${eventName}, tableName ${tableName}, firedBy ${firedBy}, description ${description}, priority ${priority}`);
+		const sysID = this._gqEventRegistry
+			.where('event_name', eventName)
+			.where('table', tableName)
+			.selectOne()
+			.orElse({'sys_id': null})
+			.sys_id;
+		
+		this._gqEventRegistry.insertOrUpdate({
+			'sys_id': sysID,
+			'suffix': suffix,
+			'event_name': eventName,
+			'table': tableName,
+			'fired_by': firedBy,
+			'description': description,
+			'priority': priority
+		});
+	}
+
+	delete(eventName, tableName) {
+		this._gqEventRegistry
+			.where('event_name', eventName)
+			.where('table', tableName)
+			.deleteMultiple();
+	}
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.van.damme&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-10 11:43:04&lt;/sys_created_on&gt;&lt;sys_id&gt;18f7b82447ed8210cf10815a516d4364&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;EventRegistryUtil&lt;/sys_name&gt;&lt;sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis"&gt;beaac464472d8210cf10815a516d43d9&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Event Based Instance Synchronizer"&gt;beaac464472d8210cf10815a516d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_18f7b82447ed8210cf10815a516d4364&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.van.damme&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-12 09:03:17&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2014105197</payload_hash>
+        <record_name>EventRegistryUtil</record_name>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-12 09:03:17</sys_created_on>
+        <sys_id>291b62cd47e14610cf10815a516d43b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ed18c010b0000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-12 09:03:17</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>ed1b62cd04e14610b73d6ea5e4903eb4</update_guid>
+        <update_guid_history>ed1b62cd04e14610b73d6ea5e4903eb4:-2014105197,492c16cd89a14610d47502f42853a9c4:736806338,11523af45c650610ec2ed76c1c21b1d9:2123458544,e87d66b025650610678ac1b0c42d65fd:-353416560,91366ef84925061041f263995beb2286:-1442403982,57162ef853250610c581012aa30e351d:-1998993844,259526f8102506102e86984c8ebeb524:-1107155596,ec1b9270852506103ad4a9646487eb92:370856834,861f1d3877210610febc456f52cd2b9e:-549440489,7a0d99b474210610e93fa519cc381e10:-116072395,e09c9574a8210610d0b35e9f72341189:-722655147,2e9a9df009210610c982ec7168fbd7ec:-1156023241,f54e2e24fca5c210f087b6142791493a:902842213,8f80cd2c7aed8210e342d1237fa25894:-618877576,5300cde859ed821001c833df9bc51eba:600120341,744ff8e8c5ed8210982b62141126cb88:-1376012641,263ff8e8eced8210c16a0b62f457846a:-1737395962,271f38a881ed8210cff417ad51dee275:1105396742,a35db8685ced8210e50d4eaeaa127458:1884406661,7e7c706827ed82106303d8c064dea224:-344463359</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-19 11:17:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>27a39cb4bb5540ea83317c4efab2dc04</sys_id>
+        <sys_metadata>18f7b82447ed8210cf10815a516d4364</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EventRegistryUtil</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>sys_script_include_18f7b82447ed8210cf10815a516d4364</sys_update_name>
+        <sys_update_version display_value="sys_script_include_18f7b82447ed8210cf10815a516d4364">291b62cd47e14610cf10815a516d43b5</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-19 11:17:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
