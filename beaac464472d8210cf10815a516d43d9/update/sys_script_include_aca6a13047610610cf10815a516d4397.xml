@@ -20,7 +20,7 @@
 			.default_value;
 	}
 
-	insertOrUpdateEventQueueTrigger(businessRuleName, tableName, action, eventName, options) {
+	insertOrUpdateEventQueueTrigger(businessRuleName, tableName, activeValue, action, eventName, options) {
 		const sysID = this._gqBusinessRule
 			.where('name', businessRuleName)
 			.where('collection', tableName)
@@ -32,6 +32,7 @@
 			'sys_id': sysID,
 			'name': businessRuleName,
 			'collection': tableName,
+			'active': activeValue,
 			'advanced': true,
 			'when': (action == 'delete') ? 'after' : 'async_always', // async will not work for deletes, since 'current' is gone
 			'script': this._getEventQueueScript(eventName, action, options)
@@ -72,13 +73,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-11 09:28:45</sys_created_on>
         <sys_id>aca6a13047610610cf10815a516d4397</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>BusinessRuleUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_aca6a13047610610cf10815a516d4397</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-16 08:00:48</sys_updated_on>
+        <sys_updated_on>2024-04-22 08:17:00</sys_updated_on>
     </sys_script_include>
 </record_update>
