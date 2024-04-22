@@ -31,6 +31,7 @@
 		this._tableName = grConfiguration.getValue('table');
 		this._tableLabel = new GlideRecord(this._tableName).getClassDisplayValue();
 		this._tableFullName = `${this._tableName} [${this._tableLabel}]`;
+		this._activeValue = (grConfiguration.getValue('active') == true);
 		this._direction = grConfiguration.getValue('direction');
 		this._actionConfig = {
 			'insert': grConfiguration.getValue('action_insert'),
@@ -51,6 +52,8 @@
 	getTableName     = () => this._tableName;
 	getTableLabel    = () => this._tableLabel;
 	getFullTableName = () => this._tableFullName;
+
+	isActive = () => this._activeValue;
 
 	getActions(value) {
 		const actionConfig = this._actionConfig;
@@ -73,13 +76,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-10 12:41:46</sys_created_on>
         <sys_id>fee909244721c210cf10815a516d4392</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>ConfigurationUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_fee909244721c210cf10815a516d4392</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-19 11:21:05</sys_updated_on>
+        <sys_updated_on>2024-04-22 08:35:37</sys_updated_on>
     </sys_script_include>
 </record_update>
