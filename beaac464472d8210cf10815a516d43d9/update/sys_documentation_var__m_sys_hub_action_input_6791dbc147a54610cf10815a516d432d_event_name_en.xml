@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="run_business_rules" label="Run business rules" language="en" table="x_snc_ebis_configuration">
+    <sys_documentation element="event_name" label="Event Name" language="en" table="var__m_sys_hub_action_input_6791dbc147a54610cf10815a516d432d">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>run_business_rules</element>
+            <element>event_name</element>
             <help/>
-            <hint>Run Business Rules on target record (Inbound only)</hint>
-            <label>Run business rules</label>
+            <hint/>
+            <label>Event Name</label>
             <language>en</language>
-            <name>x_snc_ebis_configuration</name>
+            <name>var__m_sys_hub_action_input_6791dbc147a54610cf10815a516d432d</name>
             <plural/>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>david.van.damme</sys_created_by>
-            <sys_created_on>2024-04-16 08:48:45</sys_created_on>
-            <sys_id>2fc32f9b3b2dc2d0a2ca372a85e45a9d</sys_id>
-            <sys_mod_count>5</sys_mod_count>
-            <sys_name>Run business rules</sys_name>
+            <sys_created_on>2024-04-15 09:03:30</sys_created_on>
+            <sys_id>dee78a0a47a10210cf10815a516d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Event Name</sys_name>
             <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
             <sys_policy/>
             <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-            <sys_update_name>sys_documentation_x_snc_ebis_configuration_run_business_rules_en</sys_update_name>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6791dbc147a54610cf10815a516d432d_event_name_en</sys_update_name>
             <sys_updated_by>david.van.damme</sys_updated_by>
-            <sys_updated_on>2024-04-17 12:01:43</sys_updated_on>
+            <sys_updated_on>2024-04-15 09:03:30</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
