@@ -25,23 +25,31 @@
 	}
 
 	constructor(grConfiguration) {
-		//this._gr = grConfiguration;
 		// caching attributes below for performance
 		this._number = grConfiguration.getValue('number');
 		this._tableName = grConfiguration.getValue('table');
 		this._tableLabel = new GlideRecord(this._tableName).getClassDisplayValue();
 		this._tableFullName = `${this._tableName} [${this._tableLabel}]`;
-		this._activeValue = (grConfiguration.getValue('active') == true);
+		this._activeValue = global.JSUtil.getBooleanValue(grConfiguration, 'active');
 		this._direction = grConfiguration.getValue('direction');
 		this._actionConfig = {
-			'insert': grConfiguration.getValue('action_insert'),
-			'update': grConfiguration.getValue('action_update'),
-			'delete': grConfiguration.getValue('action_delete')
+			'insert': {
+				'value': global.JSUtil.getBooleanValue(grConfiguration, 'action_insert'),
+				'condition': grConfiguration.getValue('insert_condition')
+			},
+			'update': {
+				'value': global.JSUtil.getBooleanValue(grConfiguration, 'action_update'),
+				'condition': grConfiguration.getValue('update_condition')
+			},
+			'delete': {
+				'value': global.JSUtil.getBooleanValue(grConfiguration, 'action_delete'),
+				'condition': grConfiguration.getValue('delete_condition')
+			}
 		};
 		this._options = {
-			'preserve_sys_id': grConfiguration.getValue('preserve_sys_id'),
-			'run_business_rules': grConfiguration.getValue('run_business_rules'),
-			'ignore_unknown_fields': grConfiguration.getValue('ignore_unknown_fields')
+			'preserve_sys_id': global.JSUtil.getBooleanValue(grConfiguration, 'preserve_sys_id'),
+			'run_business_rules': global.JSUtil.getBooleanValue(grConfiguration, 'run_business_rules'),
+			'ignore_unknown_fields': global.JSUtil.getBooleanValue(grConfiguration, 'ignore_unknown_fields')
 		}
 	}
 
@@ -61,9 +69,11 @@
 			return Object.keys(actionConfig);
 		} else {
 			return Object.keys(actionConfig)
-				.filter(actionName => (actionConfig[actionName] == value));
+				.filter(actionName => (actionConfig[actionName].value == value));
 		}
 	}
+
+	getActionCondition = action => this._actionConfig[action].condition;
 
 	getOptions = () => this._options;
 	getOption = option => this._options[option];
@@ -76,13 +86,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-10 12:41:46</sys_created_on>
         <sys_id>fee909244721c210cf10815a516d4392</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>ConfigurationUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_fee909244721c210cf10815a516d4392</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-22 08:35:37</sys_updated_on>
+        <sys_updated_on>2024-05-03 13:58:21</sys_updated_on>
     </sys_script_include>
 </record_update>

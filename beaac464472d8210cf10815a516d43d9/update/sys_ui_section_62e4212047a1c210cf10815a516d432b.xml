@@ -4,55 +4,83 @@
             <element>action_insert</element>
             <position>0</position>
             <sys_created_by>david.van.damme</sys_created_by>
-            <sys_created_on>2024-04-10 18:50:26</sys_created_on>
-            <sys_id>8f4eda644765c210cf10815a516d4379</sys_id>
+            <sys_created_on>2024-05-03 13:32:25</sys_created_on>
+            <sys_id>bc12b3b747f94a10abf1d9ca516d4351</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Actions" display_value="Actions" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">62e4212047a1c210cf10815a516d432b</sys_ui_section>
             <sys_updated_by>david.van.damme</sys_updated_by>
-            <sys_updated_on>2024-04-10 18:50:26</sys_updated_on>
+            <sys_updated_on>2024-05-03 13:32:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>insert_condition</element>
+            <position>1</position>
+            <sys_created_by>david.van.damme</sys_created_by>
+            <sys_created_on>2024-05-03 13:32:25</sys_created_on>
+            <sys_id>7812b3b747f94a10abf1d9ca516d4352</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Actions" display_value="Actions" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">62e4212047a1c210cf10815a516d432b</sys_ui_section>
+            <sys_updated_by>david.van.damme</sys_updated_by>
+            <sys_updated_on>2024-05-03 13:32:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>action_update</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>david.van.damme</sys_created_by>
-            <sys_created_on>2024-04-10 18:50:26</sys_created_on>
-            <sys_id>4b4eda644765c210cf10815a516d437a</sys_id>
+            <sys_created_on>2024-05-03 13:32:25</sys_created_on>
+            <sys_id>fc12b3b747f94a10abf1d9ca516d4352</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Actions" display_value="Actions" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">62e4212047a1c210cf10815a516d432b</sys_ui_section>
             <sys_updated_by>david.van.damme</sys_updated_by>
-            <sys_updated_on>2024-04-10 18:50:26</sys_updated_on>
+            <sys_updated_on>2024-05-03 13:32:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>2</position>
+            <element>update_condition</element>
+            <position>3</position>
             <sys_created_by>david.van.damme</sys_created_by>
-            <sys_created_on>2024-04-10 18:50:26</sys_created_on>
-            <sys_id>cf4eda644765c210cf10815a516d437a</sys_id>
+            <sys_created_on>2024-05-03 13:32:25</sys_created_on>
+            <sys_id>7412b3b747f94a10abf1d9ca516d4353</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Actions" display_value="Actions" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">62e4212047a1c210cf10815a516d432b</sys_ui_section>
             <sys_updated_by>david.van.damme</sys_updated_by>
-            <sys_updated_on>2024-04-10 18:50:26</sys_updated_on>
+            <sys_updated_on>2024-05-03 13:32:25</sys_updated_on>
             <sys_user/>
-            <type>.split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>action_delete</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>david.van.damme</sys_created_by>
-            <sys_created_on>2024-04-10 18:50:26</sys_created_on>
-            <sys_id>474eda644765c210cf10815a516d437b</sys_id>
+            <sys_created_on>2024-05-03 13:32:25</sys_created_on>
+            <sys_id>f812b3b747f94a10abf1d9ca516d4353</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Actions" display_value="Actions" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">62e4212047a1c210cf10815a516d432b</sys_ui_section>
             <sys_updated_by>david.van.damme</sys_updated_by>
-            <sys_updated_on>2024-04-10 18:50:26</sys_updated_on>
+            <sys_updated_on>2024-05-03 13:32:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>delete_condition</element>
+            <position>5</position>
+            <sys_created_by>david.van.damme</sys_created_by>
+            <sys_created_on>2024-05-03 13:32:25</sys_created_on>
+            <sys_id>7012b3b747f94a10abf1d9ca516d4354</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Actions" display_value="Actions" name="x_snc_ebis_configuration" sys_domain="global" view="Default view">62e4212047a1c210cf10815a516d432b</sys_ui_section>
+            <sys_updated_by>david.van.damme</sys_updated_by>
+            <sys_updated_on>2024-05-03 13:32:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
