@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="table" table="x_snc_ebis_configuration">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="attribute" table="x_snc_ebis_field_map">
         <active>true</active>
         <array>false</array>
-        <attributes>allow_public</attributes>
+        <attributes/>
         <audit>false</audit>
-        <calculation/>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Table</column_label>
+        <column_label>Attribute</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,16 +26,16 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>table</element>
+        <element>attribute</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">table_name</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>true</mandatory>
         <max_length>80</max_length>
-        <name>x_snc_ebis_configuration</name>
+        <name>x_snc_ebis_field_map</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -46,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
-        <sys_created_on>2024-04-10 14:55:54</sys_created_on>
-        <sys_name>Table</sys_name>
+        <sys_created_on>2024-05-17 12:23:56</sys_created_on>
+        <sys_name>Attribute</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name>sys_dictionary_x_snc_ebis_configuration_table</sys_update_name>
+        <sys_update_name>sys_dictionary_x_snc_ebis_field_map_attribute</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-07 09:33:34</sys_updated_on>
+        <sys_updated_on>2024-05-17 12:33:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

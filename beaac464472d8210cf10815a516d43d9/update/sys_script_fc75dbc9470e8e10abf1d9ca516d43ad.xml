@@ -3,7 +3,7 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
@@ -11,16 +11,16 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>cmdb_rel_ci</collection>
+        <collection>x_snc_ebis_configuration</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="cmdb_rel_ci">childISNOTEMPTY^EQ<item endquery="false" field="child" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <filter_condition table="x_snc_ebis_configuration">action_deleteCHANGESTOfalse^EQ<item endquery="false" field="action_delete" goto="false" newquery="false" operator="CHANGESTO" or="false" value="false"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>EBISCFG00000001 update events</name>
+        <name>Erase delete condition</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,26 +31,26 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	gs.eventQueue('x_snc_ebis.out.update',null,current.getTableName(),new GlideRecordPayloadUtil(current).getUpdateJSON());
+	current.setValue('delete_condition', '');
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
-        <sys_created_on>2024-05-03 14:09:31</sys_created_on>
+        <sys_created_on>2024-05-07 08:39:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>989a3bff47f94a10abf1d9ca516d4347</sys_id>
+        <sys_id>fc75dbc9470e8e10abf1d9ca516d43ad</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>EBISCFG00000001 update events</sys_name>
+        <sys_name>Erase delete condition</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name>sys_script_989a3bff47f94a10abf1d9ca516d4347</sys_update_name>
+        <sys_update_name>sys_script_fc75dbc9470e8e10abf1d9ca516d43ad</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-03 14:09:31</sys_updated_on>
+        <sys_updated_on>2024-05-07 08:39:46</sys_updated_on>
         <template/>
-        <when>async_always</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=989a3bff47f94a10abf1d9ca516d4347"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=fc75dbc9470e8e10abf1d9ca516d43ad"/>
 </record_update>
