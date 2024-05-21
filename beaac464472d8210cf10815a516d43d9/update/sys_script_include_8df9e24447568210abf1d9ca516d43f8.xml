@@ -14,15 +14,22 @@
 
 	constructor(grConfiguration) {
 		this._field_map = {};
+		this._fields_primary_key = [];
 		this._attribute_map = {};
+		this._attributes_primary_key = [];
 		new global.GlideQuery('x_snc_ebis_m2m_configuration_field_map')
 			.where('configuration', grConfiguration.getUniqueValue())
-			.select('field_map.field', 'field_map.attribute')
+			.select('field_map.field', 'field_map.attribute', 'primary_key')
 			.forEach(function(mapRecord) {
 				// direction 1, outbound: field -> attribute
 				this._field_map[mapRecord.field_map.field] = mapRecord.field_map.attribute;
 				// direction 2, inbound: attribute -> field
 				this._attribute_map[mapRecord.field_map.attribute] = mapRecord.field_map.field;
+
+				if (mapRecord.primary_key) {
+					this._fields_primary_key.push(mapRecord.field_map.field);
+					this._attributes_primary_key.push(mapRecord.field_map.attribute);
+				}
 			}.bind(this));
 	}
 
@@ -46,22 +53,35 @@
 		}
 
 		const messageObject = Object.keys(recordObject)
-			.reduce(function(messageObject, field) {
-				messageObject[this._field_map[field]] = recordObject[field];
-				return messageObject;
+			.reduce(function(mappingObject, field) {
+				mappingObject[this._field_map[field]] = recordObject[field];
+				return mappingObject;
 			}.bind(this), {});
 
-		return JSON.stringify(messageObject);
+		return JSON.stringify({
+				'primary_key': this._attributes_primary_key,
+				'record': messageObject
+		});
 	}
 
-	processInboundJSON(inboundJSON) {
+	getInboundObject(inboundJSON) {
 		const messageObject = JSON.parse(inboundJSON);
 
-		const recordObject = Object.keys(messageObject)
+		let recordObject = Object.keys(messageObject.record)
 			.reduce(function(recordObject, attribute) {
-				recordObject[this._attribute_map[attribute]] = messageObject[attribute];
-				return messageObject;
+				recordObject[this._attribute_map[attribute]] = messageObject.record[attribute];
+				return recordObject;
 			}.bind(this), {});
+
+		const encodedPrimaryKey = messageObject
+			.primary_key
+			.map(pkField => [pkField, messageObject.record[pkField]].join('='))
+			.join('^');
+
+		return {
+			'primary_key': encodedPrimaryKey,
+			'record': recordObject
+		};
 	}
 }
 ]]></script>
@@ -69,13 +89,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-16 13:12:18</sys_created_on>
         <sys_id>8df9e24447568210abf1d9ca516d43f8</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>FieldMapUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_8df9e24447568210abf1d9ca516d43f8</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-17 13:56:34</sys_updated_on>
+        <sys_updated_on>2024-05-21 14:55:18</sys_updated_on>
     </sys_script_include>
 </record_update>
