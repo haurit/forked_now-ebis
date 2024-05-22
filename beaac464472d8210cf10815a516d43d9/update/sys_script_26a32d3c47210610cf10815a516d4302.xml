@@ -15,13 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_snc_ebis_configuration">direction=out^active=true^EQ<item display_value="Outbound" endquery="false" field="direction" goto="false" newquery="false" operator="=" or="false" value="out"/>
-            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter_condition table="x_snc_ebis_configuration">direction=out^EQ<item display_value="Outbound" endquery="false" field="direction" goto="false" newquery="false" operator="=" or="false" value="out"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Add event trigger Business Rules</name>
+        <name>Add/update event trigger Business Rules</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -37,20 +36,15 @@
 
 	configuration.getActions(true).forEach(function(action) {
 		businessRuleUtil.insertOrUpdateEventQueueTrigger(
-			configuration.getBusinessRuleName(action),
-			configuration.getTableName(),
-			configuration.isActive(),
-			action,
-			configuration.getActionCondition(action),
-			configuration.getEventName(action),
-			configuration.getOptions()
+			configuration,
+			action
 		);
 	});
 	
 	configuration.getActions(false).forEach(function(action) {
 		businessRuleUtil.delete(
-			configuration.getBusinessRuleName(action),
-			configuration.getTableName()
+			configuration,
+			action
 		);
 	});
 
@@ -62,15 +56,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>26a32d3c47210610cf10815a516d4302</sys_id>
-        <sys_mod_count>19</sys_mod_count>
-        <sys_name>Add event trigger Business Rules</sys_name>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Add/update event trigger Business Rules</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_26a32d3c47210610cf10815a516d4302</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-03 13:53:42</sys_updated_on>
+        <sys_updated_on>2024-05-22 15:03:06</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

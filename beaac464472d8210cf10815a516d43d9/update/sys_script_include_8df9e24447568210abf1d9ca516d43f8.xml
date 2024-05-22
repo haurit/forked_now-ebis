@@ -11,6 +11,15 @@
 	static generateFieldMaps(grConfiguration) {
 		const grM2M = new global.GlideQuery('x_snc_ebis_m2m_configuration_field_map');
 	}
+	static getByConfigurationNumber(number) {
+		let grConfiguration = new GlideRecord('x_snc_ebis_configuration');
+		if (grConfiguration.get('number', number)) {
+			return new FieldMapUtil(grConfiguration);
+		} else {
+			throw(`Unable to get EBIS Configuration record with number ${number}.`);
+		}
+
+	}
 
 	constructor(grConfiguration) {
 		this._field_map = {};
@@ -33,7 +42,7 @@
 			}.bind(this));
 	}
 
-	getOutboundJSON(grRecord, preserveSysID) {
+	getOutboundMessage(grRecord, preserveSysID) {
 		const recordObject = new global.GlideQuery(grRecord.getTableName())
 			.get(grRecord.getUniqueValue(), Object.keys(this._field_map))
 			.orElse({'ERROR': 'Record not found'});
@@ -43,13 +52,10 @@
 		}
 
 		// when Preserve Sys ID option is checked, make sure it's mapped (GlideRecord.setNewGuidValue will be attempted)
-		// if not, remove sys_id entry
 		if (preserveSysID) {
 			if (!this._field_map.sys_id) {
 				throw('Preserve Sys ID option checked, but sys_id field is not included in field mapping.');
 			}
-		} else {
-			delete recordObject.sys_id;
 		}
 
 		const messageObject = Object.keys(recordObject)
@@ -64,8 +70,8 @@
 		});
 	}
 
-	getInboundObject(inboundJSON) {
-		const messageObject = JSON.parse(inboundJSON);
+	getInboundObject(inboundMessage) {
+		const messageObject = JSON.parse(inboundMessage);
 
 		let recordObject = Object.keys(messageObject.record)
 			.reduce(function(recordObject, attribute) {
@@ -75,7 +81,7 @@
 
 		const encodedPrimaryKey = messageObject
 			.primary_key
-			.map(pkField => [pkField, messageObject.record[pkField]].join('='))
+			.map(pkField => [this._attribute_map[pkField], messageObject.record[pkField]].join('='))
 			.join('^');
 
 		return {
@@ -89,13 +95,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-16 13:12:18</sys_created_on>
         <sys_id>8df9e24447568210abf1d9ca516d43f8</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>FieldMapUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_8df9e24447568210abf1d9ca516d43f8</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-21 14:55:18</sys_updated_on>
+        <sys_updated_on>2024-05-22 15:01:20</sys_updated_on>
     </sys_script_include>
 </record_update>
