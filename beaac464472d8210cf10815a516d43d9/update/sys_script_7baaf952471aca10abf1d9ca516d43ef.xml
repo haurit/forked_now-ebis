@@ -15,9 +15,7 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="incident">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
         <name>EBISCFG00000013 insert events</name>
@@ -31,26 +29,26 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	gs.eventQueue('x_snc_ebis.out.insert',null,current.getTableName(),new GlideRecordPayloadUtil(current).getInsertJSON(true));
+	gs.eventQueue('x_snc_ebis.out.insert',null,current.getTableName(),FieldMapUtil.getByConfigurationNumber('EBISCFG00000013').getOutboundMessage(current,true));
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
-        <sys_created_on>2024-05-21 12:40:44</sys_created_on>
+        <sys_created_on>2024-05-23 09:31:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>57d2907d47de0a10abf1d9ca516d4359</sys_id>
+        <sys_id>7baaf952471aca10abf1d9ca516d43ef</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>EBISCFG00000013 insert events</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name>sys_script_57d2907d47de0a10abf1d9ca516d4359</sys_update_name>
+        <sys_update_name>sys_script_7baaf952471aca10abf1d9ca516d43ef</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-21 12:40:44</sys_updated_on>
+        <sys_updated_on>2024-05-23 09:31:18</sys_updated_on>
         <template/>
         <when>async_always</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=57d2907d47de0a10abf1d9ca516d4359"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=7baaf952471aca10abf1d9ca516d43ef"/>
 </record_update>

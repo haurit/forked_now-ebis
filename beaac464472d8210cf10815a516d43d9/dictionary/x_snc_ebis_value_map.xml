@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a57e3196471aca10abf1d9ca516d43e9" label="Value map" max_length="40" name="x_snc_ebis_value_map" type="collection">
+        <element label="Attribute value" max_length="1000" name="attribute_value" type="string"/>
+        <element label="Field value" max_length="1000" name="field_value" type="string"/>
+        <element label="Script" max_length="8000" name="script" type="script"/>
+    </element>
+</database>
