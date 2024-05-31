@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="configuration_field_map" label="Configuration field map" language="en" table="x_snc_ebis_configuration_field_map_value_map">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>configuration_field_map</element>
+            <help/>
+            <hint/>
+            <label>Configuration field map</label>
+            <language>en</language>
+            <name>x_snc_ebis_configuration_field_map_value_map</name>
+            <plural>Configuration field maps</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>david.van.damme</sys_created_by>
+            <sys_created_on>2024-05-31 07:11:06</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Configuration field map</sys_name>
+            <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_ebis_configuration_field_map_value_map_configuration_field_map_en</sys_update_name>
+            <sys_updated_by>david.van.damme</sys_updated_by>
+            <sys_updated_on>2024-05-31 10:59:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
