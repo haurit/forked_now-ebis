@@ -9,8 +9,21 @@
         <name>FieldMapUtil</name>
         <script><![CDATA[class FieldMapUtil {
 	static generateFieldMaps(grConfiguration) {
-		const grM2M = new global.GlideQuery('x_snc_ebis_configuration_field_map');
+		const tableName = grConfiguration.getValue('table');
+		const grTable = new GlideRecord(tableName);
+		const fieldNames = grTable.getElements()
+			.map(element => element.getName())
+			.filter(fieldName => fieldName.indexOf('sys_') != 0); // exclude all fields starting with sys_
+		/*
+		TO DO:
+		- add property for fields to omit by default
+		- find existing field maps that can be reused and link them
+		- create non-existant field maps and link them
+		- add UI action to configuration
+		*/
+		return fieldNames;
 	}
+	
 	static getByConfigurationNumber(number) {
 		let grConfiguration = new GlideRecord('x_snc_ebis_configuration');
 		if (grConfiguration.get('number', number)) {
@@ -97,13 +110,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-16 13:12:18</sys_created_on>
         <sys_id>8df9e24447568210abf1d9ca516d43f8</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>FieldMapUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_8df9e24447568210abf1d9ca516d43f8</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-31 07:25:05</sys_updated_on>
+        <sys_updated_on>2024-06-04 07:13:38</sys_updated_on>
     </sys_script_include>
 </record_update>
