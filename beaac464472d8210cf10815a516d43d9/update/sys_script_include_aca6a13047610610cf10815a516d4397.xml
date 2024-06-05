@@ -20,7 +20,9 @@
 			.default_value;
 	}
 
-	insertOrUpdateEventQueueTrigger(businessRuleName, tableName, activeValue, action, eventName, options) {
+	insertOrUpdateEventQueueTrigger(configuration, action) {
+		const businessRuleName = this._generateName(configuration, action);
+		const tableName = configuration.getTableName();
 		const sysID = this._gqBusinessRule
 			.where('name', businessRuleName)
 			.where('collection', tableName)
@@ -32,40 +34,43 @@
 			'sys_id': sysID,
 			'name': businessRuleName,
 			'collection': tableName,
-			'active': activeValue,
+			'active': configuration.isActive(),
 			'advanced': true,
 			'when': (action == 'delete') ? 'after' : 'async_always', // async will not work for deletes, since 'current' is gone
-			'script': this._getEventQueueScript(eventName, action, options)
+			'filter_condition': configuration.getActionCondition(action),
+			'script': this._getEventQueueScript(configuration, action)
 		};
 		businessRuleConfig['action_' + action] = true;
 		
 		this._gqBusinessRule.insertOrUpdate(businessRuleConfig);
 	}
 
-	delete(businessRuleName, tableName) {
+	delete(configuration, action) {
 		this._gqBusinessRule
-			.where('name', businessRuleName)
-			.where('collection', tableName)
+			.where('name', this._generateName(configuration, action))
+			.where('collection', configuration.getTableName())
 			.deleteMultiple();
 	}
 
-	_getPayloadScript(action, options) {
-		const preserveSysID = options.preserve_sys_id || false;
+	_getEventQueueScript(configuration, action) {
+		const code = `gs.eventQueue('${configuration.getEventName(action)}',null,current.getTableName(),${this._getPayloadScript(configuration, action)});`;
+		return this._scriptTemplate.replace(/\/\/ Add your code here/g, code);
+	}
+
+	_generateName = (configuration, action) => `${configuration.getNumber()} ${action} events`;
+
+	_getPayloadScript(configuration, action) {
+		const preserveSysID = configuration.getOption('preserve_sys_id') || false;
+		const payloadPrefix = `FieldMapUtil.getByConfigurationNumber('${configuration.getNumber()}')`;
 
 		switch(action) {
 			case 'insert':
-				return `new GlideRecordPayloadUtil(current).getInsertJSON(${preserveSysID})`;
+				return `${payloadPrefix}.getOutboundMessage(current,${preserveSysID})`;
 			case 'update':
-				return 'new GlideRecordPayloadUtil(current).getUpdateJSON()';
+				return `${payloadPrefix}.getOutboundMessage(current)`;
 			case 'delete':
-				return 'new GlideRecordPayloadUtil(current).getDeleteJSON()';
+				return `${payloadPrefix}.getDeleteMessage(current)`;
 		}
-	}
-
-	_getEventQueueScript(eventName, action, options) {
-		const payloadScript = this._getPayloadScript(action, options);
-		const code = `gs.eventQueue('${eventName}',null,current.getTableName(),${payloadScript});`;
-		return this._scriptTemplate.replace(/\/\/ Add your code here/g, code);
 	}
 }
 ]]></script>
@@ -73,13 +78,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-11 09:28:45</sys_created_on>
         <sys_id>aca6a13047610610cf10815a516d4397</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>BusinessRuleUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_aca6a13047610610cf10815a516d4397</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-22 08:17:00</sys_updated_on>
+        <sys_updated_on>2024-05-23 09:30:37</sys_updated_on>
     </sys_script_include>
 </record_update>

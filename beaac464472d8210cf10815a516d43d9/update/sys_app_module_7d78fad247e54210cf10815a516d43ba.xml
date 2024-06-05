@@ -16,7 +16,7 @@
         <mobile_title>Inbound Events</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>sysevent</name>
-        <order>300</order>
+        <order>1200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d78fad247e54210cf10815a516d43ba</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Outbound Events</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_app_module_7d78fad247e54210cf10815a516d43ba</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-16 07:14:07</sys_updated_on>
+        <sys_updated_on>2024-05-21 09:15:21</sys_updated_on>
         <timeline_page/>
         <title>Outbound Events</title>
         <uncancelable>false</uncancelable>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="14d7cbe047264650abf1d9ca516d43fa" extends="sys_metadata" label="Value Map" max_length="40" name="x_snc_ebis_value_map" type="collection">
+        <element label="Attribute value" max_length="100" name="attribute_value" type="string"/>
+        <element label="Field value" max_length="100" name="field_value" type="string"/>
+        <element label="Script" max_length="8000" name="script" type="script"/>
+        <element label="Use script" max_length="40" name="use_script" type="boolean"/>
+    </element>
+</database>

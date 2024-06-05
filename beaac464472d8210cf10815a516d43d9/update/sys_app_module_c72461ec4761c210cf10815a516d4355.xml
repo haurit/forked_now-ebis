@@ -18,14 +18,14 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_snc_ebis.admin</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-10 14:36:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c72461ec4761c210cf10815a516d4355</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Configurations</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_app_module_c72461ec4761c210cf10815a516d4355</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-16 07:14:24</sys_updated_on>
+        <sys_updated_on>2024-05-31 07:18:23</sys_updated_on>
         <timeline_page/>
         <title>Configurations</title>
         <uncancelable>false</uncancelable>
