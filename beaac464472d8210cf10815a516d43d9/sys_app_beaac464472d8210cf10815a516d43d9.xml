@@ -41,7 +41,7 @@
         <user_role display_value="x_snc_ebis.user" name="x_snc_ebis.user">875d0ce4472d8210cf10815a516d4303</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>0.0.1</version>
+        <version>1.0.0</version>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=beaac464472d8210cf10815a516d43d9"/>
 </record_update>
