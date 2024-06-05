@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="update_synch=true" db_object_id="f0cec8994702ce10abf1d9ca516d4334" extends="sys_metadata" label="Field map" max_length="40" name="x_snc_ebis_field_map" type="collection">
+    <element attributes="update_synch=true" db_object_id="f0cec8994702ce10abf1d9ca516d4334" extends="sys_metadata" label="Field Map" max_length="40" name="x_snc_ebis_field_map" type="collection">
         <element hint="Attribute to use in the event message" label="Attribute" mandatory="true" max_length="80" name="attribute" type="string"/>
         <element dependent="table" dependent_on_field="table" hint="Choose field for the defined table" label="Field" mandatory="true" max_length="80" name="field" type="field_name" use_dependent_field="true"/>
         <element attributes="allow_public=true" label="Table" mandatory="true" max_length="80" name="table" type="table_name"/>
