@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_field_map">
+    <x_snc_ebis_field_map action="INSERT_OR_UPDATE">
+        <attribute>port</attribute>
+        <field>port</field>
+        <sys_class_name>x_snc_ebis_field_map</sys_class_name>
+        <sys_created_by>admin_FHSBB2W</sys_created_by>
+        <sys_created_on>2024-06-04 14:01:14</sys_created_on>
+        <sys_id>7a8b28168322029018b0cd88beaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CI Relationship - Port - port</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_field_map_7a8b28168322029018b0cd88beaad354</sys_update_name>
+        <sys_updated_by>admin_FHSBB2W</sys_updated_by>
+        <sys_updated_on>2024-06-04 14:01:14</sys_updated_on>
+        <table>cmdb_rel_ci</table>
+    </x_snc_ebis_field_map>
+</record_update>
