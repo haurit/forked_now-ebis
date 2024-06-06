@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>false</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -15,7 +15,8 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="cmdb_rel_ci">NULL<item endquery="false" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>EBISCFG00000001 insert events</name>
@@ -29,7 +30,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	gs.eventQueue('x_snc_ebis.out.insert',null,current.getTableName(),new GlideRecordPayloadUtil(current).getInsertJSON(true));
+	gs.eventQueue('x_snc_ebis.out.insert',null,current.getTableName(),FieldMapUtil.getByConfigurationNumber('EBISCFG00000001').getOutboundMessage(current,true));
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -38,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6e2493c9470e8e10abf1d9ca516d43a6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>EBISCFG00000001 insert events</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
@@ -46,7 +47,7 @@
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_6e2493c9470e8e10abf1d9ca516d43a6</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-05-07 08:34:09</sys_updated_on>
+        <sys_updated_on>2024-06-05 12:17:21</sys_updated_on>
         <template/>
         <when>async_always</when>
     </sys_script>

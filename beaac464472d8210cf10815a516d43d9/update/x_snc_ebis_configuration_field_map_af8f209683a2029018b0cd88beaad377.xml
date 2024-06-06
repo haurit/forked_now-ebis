@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map">
+    <x_snc_ebis_configuration_field_map action="INSERT_OR_UPDATE">
+        <configuration display_value="EBISCFG00000002 - CI Relationship - Inbound">9f42017247a1c210cf10815a516d43c8</configuration>
+        <field_map display_value="CI Relationship - Parent - parent">074be4928322029018b0cd88beaad337</field_map>
+        <primary_key>false</primary_key>
+        <sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name>
+        <sys_created_by>admin_FHSBB2W</sys_created_by>
+        <sys_created_on>2024-06-04 14:18:53</sys_created_on>
+        <sys_id>af8f209683a2029018b0cd88beaad377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EBISCFG00000002 - CI Relationship - Inbound/Parent - parent</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_configuration_field_map_af8f209683a2029018b0cd88beaad377</sys_update_name>
+        <sys_updated_by>admin_FHSBB2W</sys_updated_by>
+        <sys_updated_on>2024-06-04 14:18:53</sys_updated_on>
+    </x_snc_ebis_configuration_field_map>
+</record_update>
