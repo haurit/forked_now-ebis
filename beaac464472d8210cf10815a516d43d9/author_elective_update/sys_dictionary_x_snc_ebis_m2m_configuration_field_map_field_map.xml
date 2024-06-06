@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="field_map" table="x_snc_ebis_m2m_configuration_field_map">
+        <active>true</active>
+        <array>false</array>
+        <attributes>encode_utf8=false</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Field map</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>field_map</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <name>x_snc_ebis_m2m_configuration_field_map</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ebis_field_map">x_snc_ebis_field_map</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>javascript:(m2m =&gt; (m2m.configuration) ? 'table='+m2m.configuration.table : '')(current);</reference_qual>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-15 14:51:35</sys_created_on>
+        <sys_id>a94779f347424210abf1d9ca516d430b</sys_id>
+        <sys_name>Field map</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_dictionary_x_snc_ebis_m2m_configuration_field_map_field_map</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-16 09:39:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>sys_dictionary_x_snc_ebis_m2m_configuration_field_map_field_map</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="field_map" table="x_snc_ebis_m2m_configuration_field_map"><active>true</active><array>false</array><attributes>encode_utf8=false</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Field map</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>field_map</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>true</mandatory><max_length>32</max_length><name>x_snc_ebis_m2m_configuration_field_map</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="x_snc_ebis_field_map">x_snc_ebis_field_map</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual>javascript:(m2m =&gt; (m2m.configuration) ? 'table='+m2m.configuration.table : '')(current);</reference_qual><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-05-15 14:51:35</sys_created_on><sys_id>a94779f347424210abf1d9ca516d430b</sys_id><sys_name>Field map</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>sys_dictionary_x_snc_ebis_m2m_configuration_field_map_field_map</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-05-16 09:39:25</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>advanced</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>1510739367</payload_hash>
+        <record_name>M2M Configuration Field maps.Field map</record_name>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-16 09:39:25</sys_created_on>
+        <sys_id>e6697d4047928210abf1d9ca516d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f80c54f370000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-16 09:39:25</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>6e697d40579282107b6f156ac6374aab</update_guid>
+        <update_guid_history>6e697d40579282107b6f156ac6374aab:1510739367,fa19f54035928210d8f1bbc59912b017:531448419,ff987d00cf928210133582166038012e:2053389034,42283500b7928210c00f2ccf5c638866:851454652,6317f98ca75282107951145c26d4ea1b:-441184296,a6e5fd8838528210fdcb6a1389bcdb69:1970187534,4803b9889a5282104c58def5cf9ac516:-6260420,ef3b114007128210718d299b5c32e00b:231607533,600b9900e3128210786093bd48be3382:1278882436,645a9dcca0de421020726db095ed1143:1976391740,ebe9d5cc88de4210348c198d534dd503:1048492366,38c9d1cc5ede42103a56f86a1b152f1f:635114028,6269d98cfede42106e41a73cb69914e0:-1929001124,2818154caede421017af8db699dd51b1:-665107843,30483177f4424210b09d2787d143bb23:-2066716034,f4483177ee42421026daaa137d421c0b:-434174282,bfc7b137cd42421083a2204b7a44f4b2:1666903121,b4a77137ec4242102d22d0231349831a:1783884098,7d4779f3c842421080b05223203f1419:1290562223</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-31 07:12:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>10c20f3171484eb29dd9f137bd802684</sys_id>
+        <sys_metadata>a94779f347424210abf1d9ca516d430b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Field map</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent display_value="">a14739f347424210abf1d9ca516d43f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_snc_ebis_m2m_configuration_field_map_field_map</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_snc_ebis_m2m_configuration_field_map_field_map">e6697d4047928210abf1d9ca516d43ac</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-31 07:12:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

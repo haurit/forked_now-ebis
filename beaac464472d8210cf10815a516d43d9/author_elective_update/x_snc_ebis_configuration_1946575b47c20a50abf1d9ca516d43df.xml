@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration">
+    <x_snc_ebis_configuration action="DELETE">
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <delete_condition/>
+        <direction>out</direction>
+        <ignore_unknown_fields>false</ignore_unknown_fields>
+        <insert_condition/>
+        <number>EBISCFG00000013</number>
+        <preserve_sys_id>true</preserve_sys_id>
+        <run_business_rules>false</run_business_rules>
+        <sys_class_name>x_snc_ebis_configuration</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-14 08:30:15</sys_created_on>
+        <sys_id>1946575b47c20a50abf1d9ca516d43df</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>EBISCFG00000013 - Incident - Outbound</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_configuration_1946575b47c20a50abf1d9ca516d43df</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-30 12:17:40</sys_updated_on>
+        <table>incident</table>
+        <update_condition/>
+    </x_snc_ebis_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_configuration_1946575b47c20a50abf1d9ca516d43df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration"><x_snc_ebis_configuration action="INSERT_OR_UPDATE"><action_delete>false</action_delete><action_insert>true</action_insert><action_update>true</action_update><active>true</active><delete_condition/><direction>out</direction><ignore_unknown_fields>false</ignore_unknown_fields><insert_condition/><number>EBISCFG00000013</number><preserve_sys_id>true</preserve_sys_id><run_business_rules>false</run_business_rules><sys_class_name>x_snc_ebis_configuration</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-05-14 08:30:15</sys_created_on><sys_id>1946575b47c20a50abf1d9ca516d43df</sys_id><sys_mod_count>8</sys_mod_count><sys_name>EBISCFG00000013 - Incident - Outbound</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>x_snc_ebis_configuration_1946575b47c20a50abf1d9ca516d43df</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-05-30 12:17:40</sys_updated_on><table>incident</table><update_condition/></x_snc_ebis_configuration></record_update>]]></payload>
+        <payload_hash>-1133939675</payload_hash>
+        <record_name>EBISCFG00000013 - Incident - Outbound</record_name>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-30 12:17:40</sys_created_on>
+        <sys_id>c9e3ae6c47624650abf1d9ca516d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fc96f38390000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-30 12:17:40</sys_updated_on>
+        <type>Configuration</type>
+        <update_guid>41e3ae6c10624650c0e0bd1533f21707</update_guid>
+        <update_guid_history>41e3ae6c10624650c0e0bd1533f21707:-1133939675,77aabd520b1aca10f38de8b7d3485452:776015562,6c9af952c61aca1065b45665945083d4:91567286,7e5ab5525c1aca10d12d9c15c2e3a5e6:776015562,f2f93152ef1aca10553ec151805d92d6:91567286,58f9fd12c01aca103b7a40abf519ff43:-1678979468,e3d93d12701aca10c70f66c895fb8f86:-1996136003,57d214bd83de0a1084ef4cadb1a354b0:-1678979468,3566575b1fc20a5004315df95430a8e6:-1996136003</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="EBISCFG00000013 - Incident - Outbound">0620d7b6472e8610abf1d9ca516d434f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-06-06 15:17:24</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_configuration">x_snc_ebis_configuration</sys_db_object>
+        <sys_id>8bb5248cf90447588fa7270b362d0a79</sys_id>
+        <sys_metadata>1946575b47c20a50abf1d9ca516d43df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EBISCFG00000013 - Incident - Outbound</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_configuration_1946575b47c20a50abf1d9ca516d43df</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_configuration_1946575b47c20a50abf1d9ca516d43df">c9e3ae6c47624650abf1d9ca516d4307</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-06 15:17:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

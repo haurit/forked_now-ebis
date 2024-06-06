@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_field_map">
+    <x_snc_ebis_field_map action="DELETE">
+        <inbound_attribute>child</inbound_attribute>
+        <outbound_field>child</outbound_field>
+        <sys_class_name>x_snc_ebis_field_map</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-16 11:54:22</sys_created_on>
+        <sys_id>0e285e8047168210abf1d9ca516d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> - CI Relationship - </sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_field_map_0e285e8047168210abf1d9ca516d437b</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-16 11:54:22</sys_updated_on>
+        <table>cmdb_rel_ci</table>
+    </x_snc_ebis_field_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_field_map_0e285e8047168210abf1d9ca516d437b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_field_map"><x_snc_ebis_field_map action="INSERT_OR_UPDATE"><inbound_attribute>child</inbound_attribute><outbound_field>child</outbound_field><sys_class_name>x_snc_ebis_field_map</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-05-16 11:54:22</sys_created_on><sys_id>0e285e8047168210abf1d9ca516d437b</sys_id><sys_mod_count>0</sys_mod_count><sys_name> - CI Relationship - </sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>x_snc_ebis_field_map_0e285e8047168210abf1d9ca516d437b</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-05-16 11:54:22</sys_updated_on><table>cmdb_rel_ci</table></x_snc_ebis_field_map></record_update>]]></payload>
+        <payload_hash>-738741696</payload_hash>
+        <record_name> - CI Relationship - </record_name>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-16 11:54:22</sys_created_on>
+        <sys_id>e7485e8047168210abf1d9ca516d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f8140dc9f0000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-16 11:54:22</sys_updated_on>
+        <type>Field map</type>
+        <update_guid>eb485e806c168210b7163315b819f981</update_guid>
+        <update_guid_history>eb485e806c168210b7163315b819f981:-738741696</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=" - CI Relationship - ">f98816c047168210abf1d9ca516d4326</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-16 11:55:21</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_field_map">x_snc_ebis_field_map</sys_db_object>
+        <sys_id>5e12d6c339ed40109cfd4ffe9b42de40</sys_id>
+        <sys_metadata>0e285e8047168210abf1d9ca516d437b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> - CI Relationship - </sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_field_map_0e285e8047168210abf1d9ca516d437b</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_field_map_0e285e8047168210abf1d9ca516d437b">e7485e8047168210abf1d9ca516d4382</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-16 11:55:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

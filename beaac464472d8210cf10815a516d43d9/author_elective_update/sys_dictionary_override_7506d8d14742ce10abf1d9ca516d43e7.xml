@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
+    <sys_dictionary_override action="DELETE">
+        <attributes/>
+        <attributes_override>false</attributes_override>
+        <base_table>sys_metadata</base_table>
+        <calculation/>
+        <calculation_override>false</calculation_override>
+        <default_value>javascript:[current.getValue('number'), current.getDisplayValue('table'), current.getDisplayValue('direction')].join(' - ');</default_value>
+        <default_value_override>true</default_value_override>
+        <dependent/>
+        <dependent_override>false</dependent_override>
+        <display_override>false</display_override>
+        <element>sys_name</element>
+        <mandatory>false</mandatory>
+        <mandatory_override>false</mandatory_override>
+        <name>x_snc_ebis_configuration</name>
+        <read_only>false</read_only>
+        <read_only_override>false</read_only_override>
+        <reference_qual/>
+        <reference_qual_override>false</reference_qual_override>
+        <sys_class_name>sys_dictionary_override</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-07 13:23:52</sys_created_on>
+        <sys_id>7506d8d14742ce10abf1d9ca516d43e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_name</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_dictionary_override_7506d8d14742ce10abf1d9ca516d43e7</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-07 13:23:52</sys_updated_on>
+    </sys_dictionary_override>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>sys_dictionary_override_7506d8d14742ce10abf1d9ca516d43e7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>sys_metadata</base_table><calculation/><calculation_override>false</calculation_override><default_value>javascript:[current.getValue('number'), current.getDisplayValue('table'), current.getDisplayValue('direction')].join(' - ');</default_value><default_value_override>true</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>false</display_override><element>sys_name</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>x_snc_ebis_configuration</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual/><reference_qual_override>false</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-05-07 13:23:52</sys_created_on><sys_id>7506d8d14742ce10abf1d9ca516d43e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_name</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>sys_dictionary_override_7506d8d14742ce10abf1d9ca516d43e7</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-05-07 13:23:52</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+        <payload_hash>-1737410947</payload_hash>
+        <record_name>sys_name</record_name>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-07 13:23:53</sys_created_on>
+        <sys_id>7a76d0154742ce10abf1d9ca516d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f533992330000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-07 13:23:53</sys_updated_on>
+        <type>Dictionary Entry Override</type>
+        <update_guid>7e76d0159142ce1063455aa081524953</update_guid>
+        <update_guid_history>7e76d0159142ce1063455aa081524953:-1737410947</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-14 07:09:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary_override">sys_dictionary_override</sys_db_object>
+        <sys_id>22600bb15d5b44dc8a02467ba72a2d64</sys_id>
+        <sys_metadata>7506d8d14742ce10abf1d9ca516d43e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_name</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent display_value="Delete condition">241273b747f94a10abf1d9ca516d43cf</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>sys_dictionary_override_7506d8d14742ce10abf1d9ca516d43e7</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_override_7506d8d14742ce10abf1d9ca516d43e7">7a76d0154742ce10abf1d9ca516d4354</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-14 07:09:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
