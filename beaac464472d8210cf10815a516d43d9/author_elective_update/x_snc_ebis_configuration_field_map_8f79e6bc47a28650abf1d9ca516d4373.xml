@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map">
+    <x_snc_ebis_configuration_field_map action="DELETE">
+        <configuration display_value="EBISCFG00000013 - Incident - Outbound">1946575b47c20a50abf1d9ca516d43df</configuration>
+        <field_map display_value="Incident - State - state">7b02acc847e68250abf1d9ca516d4331</field_map>
+        <primary_key>false</primary_key>
+        <sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-31 07:20:48</sys_created_on>
+        <sys_id>8f79e6bc47a28650abf1d9ca516d4373</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>EBISCFG00000013 - Incident - Outbound/State - state</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_configuration_field_map_8f79e6bc47a28650abf1d9ca516d4373</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-31 10:14:10</sys_updated_on>
+    </x_snc_ebis_configuration_field_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_configuration_field_map_8f79e6bc47a28650abf1d9ca516d4373</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map"><x_snc_ebis_configuration_field_map action="INSERT_OR_UPDATE"><configuration display_value="EBISCFG00000013 - Incident - Outbound">1946575b47c20a50abf1d9ca516d43df</configuration><field_map display_value="Incident - State - state">7b02acc847e68250abf1d9ca516d4331</field_map><primary_key>false</primary_key><sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-05-31 07:20:48</sys_created_on><sys_id>8f79e6bc47a28650abf1d9ca516d4373</sys_id><sys_mod_count>10</sys_mod_count><sys_name>EBISCFG00000013 - Incident - Outbound/State - state</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>x_snc_ebis_configuration_field_map_8f79e6bc47a28650abf1d9ca516d4373</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-05-31 10:14:10</sys_updated_on></x_snc_ebis_configuration_field_map></record_update>]]></payload>
+        <payload_hash>1688397958</payload_hash>
+        <record_name>EBISCFG00000013 - Incident - Outbound/State - state</record_name>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-05-31 10:14:10</sys_created_on>
+        <sys_id>79319b7847668650abf1d9ca516d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fce2482ff0000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-05-31 10:14:10</sys_updated_on>
+        <type>Configuration Field Map</type>
+        <update_guid>fd319b784366865076faea279c806065</update_guid>
+        <update_guid_history>fd319b784366865076faea279c806065:1688397958,85319b7821668650ea5116bf4dacb29d:-2059517815,fcf097787b6686507034c9cc0fb2511c:-1936374582,7be057784c6686506e5ace9552c9cdf1:-1353849599,0aee8fb4ff668650a99908dc5faeffa0:1863770306,b8ee0fb4b1668650f3ca9d7992a048d6:802905377,d3edcb74ab6686503d1843a5b50f4f42:-274442014,52ed4b7406668650ac4767202e86bcab:1262446405,855b8fb031668650910b2c8762102e95:-1765259127,7f4bcbb0d2668650f75d27636b9542e8:1215313948,5a8966bccba28650581edcaf270f9963:-258587994</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="EBISCFG00000013 - Incident - Outbound/State - state">7f101bb6472e8610abf1d9ca516d431f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-06-06 15:17:15</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_configuration_field_map">x_snc_ebis_configuration_field_map</sys_db_object>
+        <sys_id>167bfabbf85046768be604f4bfed8f24</sys_id>
+        <sys_metadata>8f79e6bc47a28650abf1d9ca516d4373</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EBISCFG00000013 - Incident - Outbound/State - state</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_configuration_field_map_8f79e6bc47a28650abf1d9ca516d4373</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_configuration_field_map_8f79e6bc47a28650abf1d9ca516d4373">79319b7847668650abf1d9ca516d4366</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-06 15:17:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

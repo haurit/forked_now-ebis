@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_value_map">
+    <x_snc_ebis_value_map action="DELETE">
+        <attribute_value>*</attribute_value>
+        <field_value/>
+        <script><![CDATA[(function(jsonObject, attribute) {
+
+	const typeValue = JSON.parse(jsonObject)[attribute];
+	const isValidType = new global.GlideQuery('cmdb_rel_type')
+		.where('sys_id', typeValue)
+		.count() === 1;
+
+	if (!isValidType) {
+		throw(`CI Relationship Type with sys_id ${typeValue} does not exist.`);
+	} else {
+		return typeValue;
+	}
+
+})(jsonObject, attribute);
+]]></script>
+        <sys_class_name>x_snc_ebis_value_map</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-06-05 13:51:24</sys_created_on>
+        <sys_id>16c0f12647664610abf1d9ca516d4398</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Scripted field value - *</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_value_map_16c0f12647664610abf1d9ca516d4398</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:00:27</sys_updated_on>
+        <use_script>true</use_script>
+    </x_snc_ebis_value_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_value_map_16c0f12647664610abf1d9ca516d4398</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_snc_ebis_value_map"&gt;&lt;x_snc_ebis_value_map action="INSERT_OR_UPDATE"&gt;&lt;attribute_value&gt;*&lt;/attribute_value&gt;&lt;field_value/&gt;&lt;script&gt;&lt;![CDATA[(function(jsonObject, attribute) {
+
+	const typeValue = JSON.parse(jsonObject)[attribute];
+	const isValidType = new global.GlideQuery('cmdb_rel_type')
+		.where('sys_id', typeValue)
+		.count() === 1;
+
+	if (!isValidType) {
+		throw(`CI Relationship Type with sys_id ${typeValue} does not exist.`);
+	} else {
+		return typeValue;
+	}
+
+})(jsonObject, attribute);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;x_snc_ebis_value_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.van.damme&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-05 13:51:24&lt;/sys_created_on&gt;&lt;sys_id&gt;16c0f12647664610abf1d9ca516d4398&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Scripted field value - *&lt;/sys_name&gt;&lt;sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis"&gt;beaac464472d8210cf10815a516d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Based Instance Synchronizer"&gt;beaac464472d8210cf10815a516d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;x_snc_ebis_value_map_16c0f12647664610abf1d9ca516d4398&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.van.damme&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-05 14:00:27&lt;/sys_updated_on&gt;&lt;use_script&gt;true&lt;/use_script&gt;&lt;/x_snc_ebis_value_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1666559822</payload_hash>
+        <record_name>Scripted field value - *</record_name>
+        <reverted_from/>
+        <source>a9932d3247668610abf1d9ca516d43ca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-06-06 07:23:04</sys_created_on>
+        <sys_id>79936d3247668610abf1d9ca516d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fec6e04f20000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-06 07:23:04</sys_updated_on>
+        <type>Value Map</type>
+        <update_guid>99f4f92a0a664610e8463a9573c56261</update_guid>
+        <update_guid_history>99f4f92a0a664610e8463a9573c56261:-1666559822,36732932c466861081f24bf2a7786ba9:-1154542146,99f4f92a0a664610e8463a9573c56261:-1666559822,e413fd263f66461028aa4473e5c86321:-1160803790,b4e2f5a667664610246ac2a49fbfa530:-886074862</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Scripted field value - *">75d057f6472e8610abf1d9ca516d4330</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-06-06 15:20:23</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_value_map">x_snc_ebis_value_map</sys_db_object>
+        <sys_id>0622968d75b249baaf43d05cee750001</sys_id>
+        <sys_metadata>16c0f12647664610abf1d9ca516d4398</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scripted field value - *</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_value_map_16c0f12647664610abf1d9ca516d4398</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_value_map_16c0f12647664610abf1d9ca516d4398">79936d3247668610abf1d9ca516d4321</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-06 15:20:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
