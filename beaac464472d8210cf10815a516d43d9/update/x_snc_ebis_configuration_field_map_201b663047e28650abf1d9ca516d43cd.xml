@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map">
     <x_snc_ebis_configuration_field_map action="INSERT_OR_UPDATE">
-        <configuration display_value="EBISCFG00000013 - Incident - Outbound">1946575b47c20a50abf1d9ca516d43df</configuration>
+        <configuration/>
         <field_map display_value="Incident - Caller - caller">e467e6c047568210abf1d9ca516d433b</field_map>
         <primary_key>false</primary_key>
         <sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name>

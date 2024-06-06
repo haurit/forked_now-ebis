@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_snc_ebis_configuration">direction=in^EQ<item display_value="Inbound" endquery="false" field="direction" goto="false" newquery="false" operator="=" or="false" value="in"/>
+        <conditions table="x_snc_ebis_configuration">direction=in^EQ<item display_value="in" endquery="false" field="direction" goto="false" newquery="false" operator="=" or="false" value="in"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>

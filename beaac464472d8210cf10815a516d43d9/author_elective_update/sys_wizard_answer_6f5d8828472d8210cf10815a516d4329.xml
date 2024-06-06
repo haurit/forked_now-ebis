@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Configuration</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Configuration</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Application File" name="Application File">4416a062873121107a3587f5cebb3505</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-10 08:17:13</sys_created_on>
+        <sys_id>6f5d8828472d8210cf10815a516d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Configuration</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>sys_wizard_answer_6f5d8828472d8210cf10815a516d4329</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-10 08:17:13</sys_updated_on>
+        <table/>
+        <target_url>x_snc_ebis_configuration.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>sys_wizard_answer_6f5d8828472d8210cf10815a516d4329</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Configuration</answer><button_label/><dependent_value/><element/><name>Configuration</name><next_question/><order>100</order><payload_name/><question display_value="Application File" name="Application File">4416a062873121107a3587f5cebb3505</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-04-10 08:17:13</sys_created_on><sys_id>6f5d8828472d8210cf10815a516d4329</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Configuration</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>sys_wizard_answer_6f5d8828472d8210cf10815a516d4329</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-04-10 08:17:13</sys_updated_on><table/><target_url>x_snc_ebis_configuration.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>1092859405</payload_hash>
+        <record_name>Configuration</record_name>
+        <reverted_from/>
+        <source>5727942147110210cf10815a516d43fd</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin_FHSBB2W</sys_created_by>
+        <sys_created_on>2024-04-01 01:18:19</sys_created_on>
+        <sys_id>49c1706c47ad8210cf10815a516d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e973c5b780000000</sys_recorded_at>
+        <sys_updated_by>admin_FHSBB2W</sys_updated_by>
+        <sys_updated_on>2024-06-04 13:39:12</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>09c1706c65ad82109bcf225214764114</update_guid>
+        <update_guid_history>09c1706c65ad82109bcf225214764114:1092859405</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-04-10 10:56:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>78329c0c2dd84e90a2d1b36772ec3440</sys_id>
+        <sys_metadata>6f5d8828472d8210cf10815a516d4329</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Configuration</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent display_value="">4416a062873121107a3587f5cebb3505</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_6f5d8828472d8210cf10815a516d4329</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_6f5d8828472d8210cf10815a516d4329">49c1706c47ad8210cf10815a516d4314</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-04-10 10:56:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

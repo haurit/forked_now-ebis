@@ -29,15 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6791dbc147a54610cf10815a516d432d</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Outbound REST</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_6791dbc147a54610cf10815a516d432d</sys_update_name>
-        <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-15 10:40:33</sys_updated_on>
+        <sys_updated_by>admin_FHSBB2W</sys_updated_by>
+        <sys_updated_on>2024-06-04 13:38:56</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -81,12 +81,11 @@
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <inputs/>
         <label>JSON Builder step</label>
         <order>1</order>
         <outputs/>
         <section/>
-        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <step_type display_value="">dfd9f353b733111007402a91de11a9e3</step_type>
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-15 09:03:30</sys_created_on>
         <sys_id>9ee78a0a47a10210cf10815a516d43a4</sys_id>
@@ -108,21 +107,8 @@
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 09:03:30</sys_updated_on>
         <value/>
-        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+        <variable display_value="">92da7393b733111007402a91de11a980</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=9ee78a0a47a10210cf10815a516d43a4"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>structure</field>
-        <id>9ee78a0a47a10210cf10815a516d43a4</id>
-        <sys_created_by>david.van.damme</sys_created_by>
-        <sys_created_on>2024-04-15 09:03:30</sys_created_on>
-        <sys_id>1ae78a0a47a10210cf10815a516d43ab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-15 09:03:30</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3</table>
-        <value>[{"id":"dc8d3617-71c1-476f-bef1-9f523f3a279c","name":"event_name","value":"{{action.event_name}}","type":"string","path":[],"choice":"empty string"},{"id":"f1b42f6e-35d4-445a-8a4f-824c8fbd3e0e","name":"table_name","value":"{{action.table_name}}","type":"string","path":[],"choice":"empty string"},{"id":"981d5426-cbc7-4f74-8f88-9bd399422c97","name":"payload","value":"{{action.payload}}","type":"string","path":[],"choice":"empty string"}]</value>
-    </sys_element_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=9ee78a0a47a10210cf10815a516d43a4"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=9ee78a0a47a10210cf10815a516d43a4"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=9ee78a0a47a10210cf10815a516d43a4"/>
@@ -526,11 +512,11 @@
         <sys_created_on>2024-04-15 09:03:30</sys_created_on>
         <sys_id>12e78a0a47a10210cf10815a516d43d2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_f903574547a54610cf10815a516d43ff_sn_auth_token_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 09:03:30</sys_updated_on>
         <url/>
@@ -990,11 +976,11 @@
         <sys_created_on>2024-04-15 09:03:30</sys_created_on>
         <sys_id>5ee78a0a47a10210cf10815a516d4395</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Payload</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6791dbc147a54610cf10815a516d432d_payload_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 09:03:30</sys_updated_on>
         <url/>
@@ -1013,11 +999,11 @@
         <sys_created_on>2024-04-15 09:03:30</sys_created_on>
         <sys_id>9ee78a0a47a10210cf10815a516d4391</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6791dbc147a54610cf10815a516d432d_table_name_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 09:03:30</sys_updated_on>
         <url/>
@@ -1036,11 +1022,11 @@
         <sys_created_on>2024-04-15 09:03:30</sys_created_on>
         <sys_id>dee78a0a47a10210cf10815a516d438d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Event Name</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6791dbc147a54610cf10815a516d432d_event_name_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 09:03:30</sys_updated_on>
         <url/>
@@ -1061,11 +1047,11 @@
         <sys_created_on>2024-04-12 11:57:48</sys_created_on>
         <sys_id>8203974547a54610cf10815a516d4345</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_6791dbc147a54610cf10815a516d432d___action_status___en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-12 11:57:48</sys_updated_on>
         <url/>
@@ -1084,11 +1070,11 @@
         <sys_created_on>2024-04-12 11:57:48</sys_created_on>
         <sys_id>ce03974547a54610cf10815a516d434b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_6791dbc147a54610cf10815a516d432d___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-12 11:57:48</sys_updated_on>
         <url/>
@@ -1190,12 +1176,11 @@
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <inputs/>
         <label>JSON Builder step</label>
         <order>1</order>
         <outputs/>
         <section/>
-        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <step_type display_value="">dfd9f353b733111007402a91de11a9e3</step_type>
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-15 10:40:32</sys_created_on>
         <sys_id>e71e128247250210cf10815a516d4331</sys_id>
@@ -1217,21 +1202,8 @@
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
         <value/>
-        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+        <variable display_value="">92da7393b733111007402a91de11a980</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=e71e128247250210cf10815a516d4331"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>structure</field>
-        <id>e71e128247250210cf10815a516d4331</id>
-        <sys_created_by>david.van.damme</sys_created_by>
-        <sys_created_on>2024-04-15 10:40:32</sys_created_on>
-        <sys_id>2b1e128247250210cf10815a516d4336</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3</table>
-        <value>[{"id":"dc8d3617-71c1-476f-bef1-9f523f3a279c","name":"event_name","value":"{{action.event_name}}","type":"string","path":[],"choice":"empty string"},{"id":"f1b42f6e-35d4-445a-8a4f-824c8fbd3e0e","name":"table_name","value":"{{action.table_name}}","type":"string","path":[],"choice":"empty string"},{"id":"981d5426-cbc7-4f74-8f88-9bd399422c97","name":"payload","value":"{{action.payload}}","type":"string","path":[],"choice":"empty string"}]</value>
-    </sys_element_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=e71e128247250210cf10815a516d4331"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=e71e128247250210cf10815a516d4331"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=e71e128247250210cf10815a516d4331"/>
@@ -1635,11 +1607,11 @@
         <sys_created_on>2024-04-15 10:40:32</sys_created_on>
         <sys_id>af1e128247250210cf10815a516d4343</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_eb1e128247250210cf10815a516d4338_sn_auth_token_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
         <url/>
@@ -2099,11 +2071,11 @@
         <sys_created_on>2024-04-15 10:40:32</sys_created_on>
         <sys_id>a31e128247250210cf10815a516d432b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_271e128247250210cf10815a516d431f_table_name_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
         <url/>
@@ -2122,11 +2094,11 @@
         <sys_created_on>2024-04-15 10:40:32</sys_created_on>
         <sys_id>a71e128247250210cf10815a516d4327</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Event Name</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_271e128247250210cf10815a516d431f_event_name_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
         <url/>
@@ -2145,11 +2117,11 @@
         <sys_created_on>2024-04-15 10:40:32</sys_created_on>
         <sys_id>af1e128247250210cf10815a516d432e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Payload</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_271e128247250210cf10815a516d431f_payload_en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
         <url/>
@@ -2170,11 +2142,11 @@
         <sys_created_on>2024-04-15 10:40:33</sys_created_on>
         <sys_id>371e128247250210cf10815a516d4376</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_271e128247250210cf10815a516d431f___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 10:40:33</sys_updated_on>
         <url/>
@@ -2193,11 +2165,11 @@
         <sys_created_on>2024-04-15 10:40:32</sys_created_on>
         <sys_id>bf1e128247250210cf10815a516d4357</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_271e128247250210cf10815a516d431f___action_status___en</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-04-15 10:40:32</sys_updated_on>
         <url/>
