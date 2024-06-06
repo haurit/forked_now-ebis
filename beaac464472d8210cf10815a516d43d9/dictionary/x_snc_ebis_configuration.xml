@@ -7,8 +7,8 @@
         <element dependent="table" dependent_on_field="table" label="Delete condition" max_length="4000" name="delete_condition" type="conditions" use_dependent_field="true"/>
         <element choice="1" hint="Outbound means from this instance to another one, inbound means from another instance to this one" label="Direction" mandatory="true" max_length="40" name="direction" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Inbound" sequence="1" value="in"/>
-                <element inactive_on_update="false" label="Outbound" sequence="2" value="out"/>
+                <element inactive_on_update="false" label="Inbound" value="in"/>
+                <element inactive_on_update="false" label="Outbound" value="out"/>
             </choice>
         </element>
         <element hint="Ignore fields in payload when those are unknown in the target table (Inbound only). When set to false, errors will be generated for fields that do not exist." label="Ignore unknown fields" max_length="255" name="ignore_unknown_fields" type="boolean"/>
