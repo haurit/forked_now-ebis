@@ -104,19 +104,32 @@
 			'record': recordObject
 		};
 	}
+
+	getDeleteMessage(grRecord) {
+		const messageObject = this._fields_primary_key
+			.reduce(function(mappingObject, field) {
+				mappingObject[this._field_map[field]] = this._value_map.getOutboundValue(grRecord, field);
+				return mappingObject;
+			}.bind(this), {});
+
+		return JSON.stringify({
+				'primary_key': this._attributes_primary_key,
+				'record': messageObject
+		});
+	}
 }
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-16 13:12:18</sys_created_on>
         <sys_id>8df9e24447568210abf1d9ca516d43f8</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>FieldMapUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_8df9e24447568210abf1d9ca516d43f8</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-06-04 07:13:38</sys_updated_on>
+        <sys_updated_on>2024-06-07 14:55:21</sys_updated_on>
     </sys_script_include>
 </record_update>
