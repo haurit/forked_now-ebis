@@ -8,6 +8,30 @@
         <description>Helper functions for Value maps</description>
         <name>ValueMapUtil</name>
         <script><![CDATA[class ValueMapUtil {
+	// static helper method to reject or ignore references that are not found
+	static checkReference(table, field, referenceKeyField, value, action) {
+		const referenceTable = new global.GlideQuery('sys_dictionary')
+			.where('name', table)
+			.where('element', field)
+			.selectOne('reference')
+			.orElse({'reference': null})
+			.reference;
+		const referenceCount = new global.GlideQuery(referenceTable)
+			.where(referenceKeyField, value)
+			.count();
+
+		if (referenceCount == 1) {
+			return value;
+		} else {
+			if (action == 'ignore') {
+				return '';
+			} else if (action == 'reject') {
+				throw(`Reference ${value} not found in '${referenceTable}' table for field ${field}`);
+			} else {
+				throw('ValueMapUtil.checkReference requires parameter action to have a value "reject" or "ignore".');
+			}
+		}
+	}
 
 	constructor(configurationSysID) {
 		this._gqFieldValueMap = new global.GlideQuery('x_snc_ebis_configuration_field_map_value_map')
@@ -47,7 +71,7 @@
 			return valueMap.attribute_value;
 		}
 	}
-
+	
 	getInboundValue(object, attribute) {
 		let attributeValue = object[attribute];
 		let gqFieldValueMap = this._gqFieldValueMap
@@ -64,21 +88,22 @@
 				.where('value_map.attribute_value', attributeValue);
 		}
 
-		const valueMap = gqFieldValueMap
-			.selectOne('value_map.sys_id', 'value_map.use_script', 'value_map.field_value')
-			.orElse({'value_map': {'field_value': attributeValue}})
-			.value_map;
+		const fieldValueMap = gqFieldValueMap
+			.selectOne('value_map.sys_id', 'value_map.use_script', 'value_map.field_value', 'configuration_field_map.configuration.table', 'configuration_field_map.field_map.field')
+			.orElse({'value_map': {'field_value': attributeValue}});
 
-		if (valueMap.use_script == true) {
+		if (fieldValueMap.value_map.use_script == true) {
 			return this._evaluateScript(
-				valueMap.sys_id,
+				fieldValueMap.value_map.sys_id,
 				{
 					'jsonObject': JSON.stringify(object),
-					'attribute': attribute
+					'attribute': attribute,
+					'table': fieldValueMap.configuration_field_map.configuration.table,
+					'field': fieldValueMap.configuration_field_map.field_map.field
 				}
 			);
 		} else {
-			return valueMap.field_value;
+			return fieldValueMap.value_map.field_value;
 		}
 	}
 
@@ -86,14 +111,16 @@
 		let grValueMap = new GlideRecord('x_snc_ebis_value_map');
 
 		if (grValueMap.get(valueMapSysID)) {
-			try {
-				return new GlideScopedEvaluator().evaluateScript(
+			const result = new GlideScopedEvaluator()
+				.evaluateScript(
 					grValueMap,
 					'script',
 					parameterMap
 				);
-			} catch(error) {
-				gs.error(`EBIS error while evaluating value map script: ${error}`);
+			if (result instanceof Error) {
+				throw(new Error(`While evaluating value map script '${valueMapSysID}': ${result.message}`));
+			} else {
+				return result;
 			}
 		} else {
 			throw(`Field Value Map with sys_id=${valueMapSysID} not found.`);
@@ -105,13 +132,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-28 14:29:55</sys_created_on>
         <sys_id>0ca3684c47e68250abf1d9ca516d43f7</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>ValueMapUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_0ca3684c47e68250abf1d9ca516d43f7</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-06-05 14:37:53</sys_updated_on>
+        <sys_updated_on>2024-07-03 07:39:55</sys_updated_on>
     </sys_script_include>
 </record_update>
