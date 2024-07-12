@@ -19,5 +19,5 @@ Create a configuration record to define inbound or outbound events to be capture
 The source instance should have an active **Outbound** Configuration record setup for the table to monitor. Once this Configuration record is created (and active!), the EBIS app will generate the necessary Business Rules to capture record transactions that need syncrhonizing to the target instance.
 ![Outbound Configuration screenshot](images/configuration_outbound.png?raw=true "Example Outbound Configuration")
 ### Target Instance
-The source instance should have an active **Inbound** Configuration record for the same table that was in the Outbound Configuration record in the source instance. Once this Configuration record is created (and active!), the EBIS app will start processing incoming events from the source instance.
+The target instance should have an active **Inbound** Configuration record for the same table that was in the Outbound Configuration record in the source instance. Once this Configuration record is created (and active!), the EBIS app will start processing incoming events from the source instance.
 ![Inbound Configuration screenshot](images/configuration_inbound.png?raw=true "Example Inbound Configuration")
