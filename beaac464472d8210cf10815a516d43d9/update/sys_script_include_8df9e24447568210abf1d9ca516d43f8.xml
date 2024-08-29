@@ -31,7 +31,6 @@
 		} else {
 			throw(`Unable to get EBIS Configuration record with number ${number}.`);
 		}
-
 	}
 
 	constructor(configurationSysID) {
@@ -40,21 +39,43 @@
 		this._fields_primary_key = [];
 		this._attribute_map = {};
 		this._attributes_primary_key = [];
-		new global.GlideQuery('x_snc_ebis_configuration_field_map')
-			.where('configuration', configurationSysID)
-			.select('field_map.field', 'field_map.attribute', 'primary_key')
-			.forEach(function(mapRecord) {
-				// direction 1, outbound: field -> attribute
-				this._field_map[mapRecord.field_map.field] = mapRecord.field_map.attribute;
-				// direction 2, inbound: attribute -> field
-				this._attribute_map[mapRecord.field_map.attribute] = mapRecord.field_map.field;
+		let gqConfigurationFieldMap = new global.GlideQuery('x_snc_ebis_configuration_field_map')
+			.where('configuration', configurationSysID);
+		
+		if (gqConfigurationFieldMap.count() > 0) {
+			gqConfigurationFieldMap
+				.select('field_map.field', 'field_map.attribute', 'primary_key')
+				.forEach(function(mapRecord) {
+					// direction 1, outbound: field -> attribute
+					this._field_map[mapRecord.field_map.field] = mapRecord.field_map.attribute;
+					// direction 2, inbound: attribute -> field
+					this._attribute_map[mapRecord.field_map.attribute] = mapRecord.field_map.field;
 
-				if (mapRecord.primary_key) {
-					this._fields_primary_key.push(mapRecord.field_map.field);
-					this._attributes_primary_key.push(mapRecord.field_map.attribute);
-				}
-			}.bind(this));
-		this._value_map = new ValueMapUtil(this._configurationSysID);
+					if (mapRecord.primary_key) {
+						this._fields_primary_key.push(mapRecord.field_map.field);
+						this._attributes_primary_key.push(mapRecord.field_map.attribute);
+					}
+				}.bind(this));
+			this._value_map = new ValueMapUtil(this._configurationSysID);
+		} else {
+			// if there are no Field Maps linked to the Configuration, deactivate it and throw an error
+			let gqConfiguration = new global.GlideQuery('x_snc_ebis_configuration')
+				.where('sys_id', configurationSysID);
+			const configuration = gqConfiguration
+				.selectOne('number')
+				.orElse({'ERROR': `Configuration record with sys_id='${configurationSysID}' not found.`});
+
+			let message = '';
+			
+			if (configuration.error) {
+				message = configurationNumber.error;
+			} else {
+				message = `Configuration with number '${configuration.number}' has no Field Mappings linked, so it was deactivated. Please link at least one Field Mapping before activating a configuration record.`;
+				gqConfiguration.update({'active': false});
+			}
+
+			throw(message);
+		}
 	}
 
 	getOutboundMessage(grRecord, preserveSysID) {
@@ -123,13 +144,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-16 13:12:18</sys_created_on>
         <sys_id>8df9e24447568210abf1d9ca516d43f8</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>FieldMapUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_8df9e24447568210abf1d9ca516d43f8</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-06-07 14:55:21</sys_updated_on>
+        <sys_updated_on>2024-08-29 10:17:35</sys_updated_on>
     </sys_script_include>
 </record_update>

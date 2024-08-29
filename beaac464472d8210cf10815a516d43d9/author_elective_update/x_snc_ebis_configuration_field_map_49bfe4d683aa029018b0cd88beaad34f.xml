@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map">
+    <x_snc_ebis_configuration_field_map action="DELETE">
+        <configuration display_value="EBISCFG00000001 - CI Relationship - Outbound">5322413247a1c210cf10815a516d43bb</configuration>
+        <field_map display_value="CI Relationship - Child - child">507b2cde8322029018b0cd88beaad338</field_map>
+        <primary_key>false</primary_key>
+        <sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name>
+        <sys_created_by>admin_FHSBB2W</sys_created_by>
+        <sys_created_on>2024-06-04 14:19:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>49bfe4d683aa029018b0cd88beaad34f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>EBISCFG00000001 - CI Relationship - Outbound/Child - child</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_configuration_field_map_49bfe4d683aa029018b0cd88beaad34f</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-06 14:52:39</sys_updated_on>
+    </x_snc_ebis_configuration_field_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_configuration_field_map_49bfe4d683aa029018b0cd88beaad34f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map"><x_snc_ebis_configuration_field_map action="INSERT_OR_UPDATE"><configuration display_value="EBISCFG00000001 - CI Relationship - Outbound">5322413247a1c210cf10815a516d43bb</configuration><field_map display_value="CI Relationship - Child - child">507b2cde8322029018b0cd88beaad338</field_map><primary_key>false</primary_key><sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name><sys_created_by>admin_FHSBB2W</sys_created_by><sys_created_on>2024-06-04 14:19:33</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>49bfe4d683aa029018b0cd88beaad34f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>EBISCFG00000001 - CI Relationship - Outbound/Child - child</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>x_snc_ebis_configuration_field_map_49bfe4d683aa029018b0cd88beaad34f</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-06-06 14:52:39</sys_updated_on></x_snc_ebis_configuration_field_map></record_update>]]></payload>
+        <payload_hash>372429122</payload_hash>
+        <record_name>EBISCFG00000001 - CI Relationship - Outbound/Child - child</record_name>
+        <reverted_from/>
+        <source>e566ffc747eec610abf1d9ca516d437a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-06-07 12:42:58</sys_created_on>
+        <sys_id>f966330b47eec610abf1d9ca516d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ff2b942dc0000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-07 12:42:58</sys_updated_on>
+        <type>Configuration Field Map</type>
+        <update_guid>efaaa3cf28aa0e90f6cdac78f0135bbc</update_guid>
+        <update_guid_history>efaaa3cf28aa0e90f6cdac78f0135bbc:372429122,e3ea4f32e426c69024736c9045d5aad9:20005467,95501fb6cc2e86100e55179ad1934655:-1914042873,ef7a4b32232e86105c5dad5fd470505b:-2059743414,ef7a4b32232e86105c5dad5fd470505b:-2059743414,466b552e62e24610f11049cae83aaa56:502495383,3a7329323e668610269e399666fe7dbe:1802041986,466b552e62e24610f11049cae83aaa56:502495383</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="EBISCFG00000001 - CI Relationship - Outbound/Child - child">1bad2e3547941e10abf1d9ca516d43a4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-08-29 10:02:42</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_configuration_field_map">x_snc_ebis_configuration_field_map</sys_db_object>
+        <sys_id>0f4c33bc4cd747329e49f2521ab6e624</sys_id>
+        <sys_metadata>49bfe4d683aa029018b0cd88beaad34f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EBISCFG00000001 - CI Relationship - Outbound/Child - child</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_configuration_field_map_49bfe4d683aa029018b0cd88beaad34f</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_configuration_field_map_49bfe4d683aa029018b0cd88beaad34f">f966330b47eec610abf1d9ca516d430b</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-08-29 10:02:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
