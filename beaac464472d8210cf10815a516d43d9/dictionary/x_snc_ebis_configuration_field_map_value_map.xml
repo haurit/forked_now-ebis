@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="update_synch=true" db_object_id="92866ef447a28650abf1d9ca516d43dd" extends="sys_metadata" label="Configuration Field Map Value Map" max_length="40" name="x_snc_ebis_configuration_field_map_value_map" type="collection">
-        <element label="Configuration field map" mandatory="true" max_length="32" name="configuration_field_map" reference="x_snc_ebis_configuration_field_map" type="reference"/>
-        <element label="Value map" mandatory="true" max_length="32" name="value_map" reference="x_snc_ebis_value_map" type="reference"/>
+        <element label="Configuration field map" mandatory="true" max_length="32" name="configuration_field_map" reference="x_snc_ebis_configuration_field_map" reference_cascade_rule="delete" type="reference"/>
+        <element label="Value map" mandatory="true" max_length="32" name="value_map" reference="x_snc_ebis_value_map" reference_cascade_rule="delete" type="reference"/>
         <index name="index">
             <element name="configuration_field_map"/>
         </index>
