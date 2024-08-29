@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map">
+    <x_snc_ebis_configuration_field_map action="DELETE">
+        <configuration display_value="EBISCFG00000002 - CI Relationship - Inbound">9f42017247a1c210cf10815a516d43c8</configuration>
+        <field_map display_value="CI Relationship - Child - child">507b2cde8322029018b0cd88beaad338</field_map>
+        <primary_key>false</primary_key>
+        <sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-07-02 12:39:34</sys_created_on>
+        <sys_id>7955e89b47874210cf10815a516d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EBISCFG00000002 - CI Relationship - Inbound/Child - child</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_configuration_field_map_7955e89b47874210cf10815a516d43ac</sys_update_name>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:39:34</sys_updated_on>
+    </x_snc_ebis_configuration_field_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_configuration_field_map_7955e89b47874210cf10815a516d43ac</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_configuration_field_map"><x_snc_ebis_configuration_field_map action="INSERT_OR_UPDATE"><configuration display_value="EBISCFG00000002 - CI Relationship - Inbound">9f42017247a1c210cf10815a516d43c8</configuration><field_map display_value="CI Relationship - Child - child">507b2cde8322029018b0cd88beaad338</field_map><primary_key>false</primary_key><sys_class_name>x_snc_ebis_configuration_field_map</sys_class_name><sys_created_by>david.van.damme</sys_created_by><sys_created_on>2024-07-02 12:39:34</sys_created_on><sys_id>7955e89b47874210cf10815a516d43ac</sys_id><sys_mod_count>0</sys_mod_count><sys_name>EBISCFG00000002 - CI Relationship - Inbound/Child - child</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>x_snc_ebis_configuration_field_map_7955e89b47874210cf10815a516d43ac</sys_update_name><sys_updated_by>david.van.damme</sys_updated_by><sys_updated_on>2024-07-02 12:39:34</sys_updated_on></x_snc_ebis_configuration_field_map></record_update>]]></payload>
+        <payload_hash>-954761866</payload_hash>
+        <record_name>EBISCFG00000002 - CI Relationship - Inbound/Child - child</record_name>
+        <reverted_from/>
+        <source>655549604721c210cf10815a516d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-07-02 12:39:34</sys_created_on>
+        <sys_id>6f552c9b47874210cf10815a516d4311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1907375211c0000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-07-02 12:39:34</sys_updated_on>
+        <type>Configuration Field Map</type>
+        <update_guid>63552c9b8887421049366a9e7716d611</update_guid>
+        <update_guid_history>63552c9b8887421049366a9e7716d611:-954761866</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="EBISCFG00000002 - CI Relationship - Inbound/Child - child">f554923947141e10abf1d9ca516d43c9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-08-29 08:12:00</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_configuration_field_map">x_snc_ebis_configuration_field_map</sys_db_object>
+        <sys_id>3707ddf27928438c81cb591aba217e90</sys_id>
+        <sys_metadata>7955e89b47874210cf10815a516d43ac</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EBISCFG00000002 - CI Relationship - Inbound/Child - child</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_configuration_field_map_7955e89b47874210cf10815a516d43ac</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_configuration_field_map_7955e89b47874210cf10815a516d43ac">6f552c9b47874210cf10815a516d4311</sys_update_version>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-08-29 08:12:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

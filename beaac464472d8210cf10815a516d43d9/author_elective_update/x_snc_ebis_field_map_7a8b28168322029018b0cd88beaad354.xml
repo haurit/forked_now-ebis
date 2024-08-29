@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_field_map">
+    <x_snc_ebis_field_map action="DELETE">
+        <attribute>port</attribute>
+        <field>port</field>
+        <sys_class_name>x_snc_ebis_field_map</sys_class_name>
+        <sys_created_by>admin_FHSBB2W</sys_created_by>
+        <sys_created_on>2024-06-04 14:01:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7a8b28168322029018b0cd88beaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CI Relationship - Port - port</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_update_name>x_snc_ebis_field_map_7a8b28168322029018b0cd88beaad354</sys_update_name>
+        <sys_updated_by>admin_FHSBB2W</sys_updated_by>
+        <sys_updated_on>2024-06-04 14:01:14</sys_updated_on>
+        <table>cmdb_rel_ci</table>
+    </x_snc_ebis_field_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</application>
+        <file_path/>
+        <instance_id>bc820efcdb4015983050ac44d496198b</instance_id>
+        <instance_name>empdavid</instance_name>
+        <name>x_snc_ebis_field_map_7a8b28168322029018b0cd88beaad354</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_ebis_field_map"><x_snc_ebis_field_map action="INSERT_OR_UPDATE"><attribute>port</attribute><field>port</field><sys_class_name>x_snc_ebis_field_map</sys_class_name><sys_created_by>admin_FHSBB2W</sys_created_by><sys_created_on>2024-06-04 14:01:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7a8b28168322029018b0cd88beaad354</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CI Relationship - Port - port</sys_name><sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope><sys_update_name>x_snc_ebis_field_map_7a8b28168322029018b0cd88beaad354</sys_update_name><sys_updated_by>admin_FHSBB2W</sys_updated_by><sys_updated_on>2024-06-04 14:01:14</sys_updated_on><table>cmdb_rel_ci</table></x_snc_ebis_field_map></record_update>]]></payload>
+        <payload_hash>869188236</payload_hash>
+        <record_name>CI Relationship - Port - port</record_name>
+        <reverted_from/>
+        <source>e566ffc747eec610abf1d9ca516d437a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-06-07 12:42:58</sys_created_on>
+        <sys_id>bd66330b47eec610abf1d9ca516d431a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ff2b9437c0000001</sys_recorded_at>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-06-07 12:42:58</sys_updated_on>
+        <type>Field Map</type>
+        <update_guid>a7baab036bea0e9020652d21984d72b2</update_guid>
+        <update_guid_history>a7baab036bea0e9020652d21984d72b2:869188236,f9a7873a4d22c6902aa91245511435c6:-940812112,528013f65a2e86106f98fcdec22f6f3c:1932567503,a65b552edfe24610ea011f52cbcae040:-940812112,7a7329323a6686104840f0de6384c0d8:-282859424,a65b552edfe24610ea011f52cbcae040:-940812112</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CI Relationship - Port - port">32f29b3147581e10abf1d9ca516d43fa</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin_FHSBB2W</sys_created_by>
+        <sys_created_on>2024-08-29 12:45:41</sys_created_on>
+        <sys_db_object display_value="" name="x_snc_ebis_field_map">x_snc_ebis_field_map</sys_db_object>
+        <sys_id>0f17fda952654d288d339737d4206824</sys_id>
+        <sys_metadata>7a8b28168322029018b0cd88beaad354</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CI Relationship - Port - port</sys_name>
+        <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
+        <sys_scope_delete display_value="">7c3db4ef102c49ac8c1d9e0df2822c89</sys_scope_delete>
+        <sys_update_name>x_snc_ebis_field_map_7a8b28168322029018b0cd88beaad354</sys_update_name>
+        <sys_update_version display_value="x_snc_ebis_field_map_7a8b28168322029018b0cd88beaad354">bd66330b47eec610abf1d9ca516d431a</sys_update_version>
+        <sys_updated_by>admin_FHSBB2W</sys_updated_by>
+        <sys_updated_on>2024-08-29 12:45:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
