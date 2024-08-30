@@ -6,6 +6,7 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description>Helper functions for Value maps</description>
+        <mobile_callable>false</mobile_callable>
         <name>ValueMapUtil</name>
         <script><![CDATA[class ValueMapUtil {
 	// static helper method to reject or ignore references that are not found

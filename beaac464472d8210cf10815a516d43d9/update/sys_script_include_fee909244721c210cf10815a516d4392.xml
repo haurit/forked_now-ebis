@@ -6,6 +6,7 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description>Helper class to manage Configuration [x_snc_ebis.configuration] records</description>
+        <mobile_callable>false</mobile_callable>
         <name>ConfigurationUtil</name>
         <script><![CDATA[class ConfigurationUtil {
 	static find(direction, action, tableName) {
