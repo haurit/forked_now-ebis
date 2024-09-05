@@ -45,6 +45,15 @@
 		}
 	}
 
+	static getReferenceQualifier(fieldMapSysID) {
+		let grFieldMap = new GlideRecord('x_snc_ebis_field_map');
+		if (grFieldMap.get(fieldMapSysID)) {
+			return 'table=' + grFieldMap.getValue('table');
+		} else {
+			return '';
+		}
+	}
+
 	constructor(grConfiguration) {
 		// caching attributes below for performance
 		this._sys_id = grConfiguration.getValue('sys_id');
@@ -118,13 +127,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-10 12:41:46</sys_created_on>
         <sys_id>fee909244721c210cf10815a516d4392</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>ConfigurationUtil</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_script_include_fee909244721c210cf10815a516d4392</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-08-28 12:55:25</sys_updated_on>
+        <sys_updated_on>2024-09-04 09:44:39</sys_updated_on>
     </sys_script_include>
 </record_update>
