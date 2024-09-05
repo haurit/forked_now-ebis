@@ -17,15 +17,17 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="Application File" name="sys_metadata">93072120a920211076daa554cb57d98c</super_class>
+        <super_class display_value="Application File" name="sys_metadata">993d1000091112009d04202579217820</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-31 06:58:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>12e3ea7447a28650abf1d9ca516d4350</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Configuration Field Map</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_db_object_12e3ea7447a28650abf1d9ca516d4350</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>

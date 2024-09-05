@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="update_synch=true" db_object_id="12e3ea7447a28650abf1d9ca516d4350" extends="sys_metadata" label="Configuration Field Map" max_length="40" name="x_snc_ebis_configuration_field_map" type="collection">
-        <element label="Primary key" max_length="40" name="primary_key" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Field map" mandatory="true" max_length="32" name="field_map" reference="x_snc_ebis_field_map" reference_cascade_rule="delete" reference_qual="javascript:FieldMapUtil.getReferenceQualifier(current.getValue('configuration'));" type="reference" use_reference_qualifier="advanced"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Configuration" mandatory="true" max_length="32" name="configuration" reference="x_snc_ebis_configuration" reference_cascade_rule="delete" reference_qual="javascript:ConfigurationUtil.getReferenceQualifier(current.getValue('field_map'));" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Field map" mandatory="true" max_length="32" name="field_map" reference="x_snc_ebis_field_map" reference_cascade_rule="delete" reference_qual="javascript:FieldMapUtil.getReferenceQualifier(current.getValue('configuration'));" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Primary key" max_length="40" name="primary_key" type="boolean"/>
         <index name="index">
             <element name="configuration"/>
         </index>
