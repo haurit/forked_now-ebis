@@ -17,7 +17,7 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="Application File" name="sys_metadata">93072120a920211076daa554cb57d98c</super_class>
+        <super_class display_value="Application File" name="sys_metadata">961010001b330210e50ddc61ab4bcba5</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-05-31 06:58:43</sys_created_on>

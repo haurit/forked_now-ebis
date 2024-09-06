@@ -10,6 +10,7 @@
         <applicability_type>script</applicability_type>
         <delay_output_processing>false</delay_output_processing>
         <depends_on/>
+        <depends_on_list/>
         <error_policy>continue_service_plan_execution</error_policy>
         <feature display_value="1dbdf571fc387110f87736513ef7b2af">a5128e4f470e8650abf1d9ca516d435b</feature>
         <return_request>false</return_request>

@@ -6,6 +6,7 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description>Allows easy conversion from GlideRecord to JSON string</description>
+        <mobile_callable>false</mobile_callable>
         <name>GlideRecordPayloadUtil</name>
         <script><![CDATA[class GlideRecordPayloadUtil {
 	constructor(gr) {

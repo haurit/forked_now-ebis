@@ -19,9 +19,10 @@
         <sys_updated_by>david.van.damme</sys_updated_by>
         <sys_updated_on>2024-05-31 11:39:01</sys_updated_on>
         <table>x_snc_ebis_value_map</table>
-        <ui_policy display_value="Read-only empty Attribute value when Use script selected">a81d5bb447a68650abf1d9ca516d4360</ui_policy>
+        <ui_policy display_value="Hide empty Attribute value when Use script selected">a81d5bb447a68650abf1d9ca516d4360</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>false</visible>
     </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=695dd3f447a68650abf1d9ca516d4369"/>
 </record_update>
