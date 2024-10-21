@@ -2,7 +2,8 @@
     <sys_user_role action="INSERT_OR_UPDATE">
         <assignable_by/>
         <can_delegate>true</can_delegate>
-        <description>Create, update and delete configuration records</description>
+        <description>Create, update and delete configuration records&#13;
+Contains x_snc_ebis.user for read of configuration records</description>
         <elevated_privilege>false</elevated_privilege>
         <encryption_context/>
         <grantable>true</grantable>
@@ -14,13 +15,13 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-10 08:05:55</sys_created_on>
         <sys_id>bdca00e0472d8210cf10815a516d4321</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_snc_ebis.admin</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_user_role_bdca00e0472d8210cf10815a516d4321</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-10-21 13:11:47</sys_updated_on>
+        <sys_updated_on>2024-10-21 14:08:21</sys_updated_on>
     </sys_user_role>
 </record_update>
