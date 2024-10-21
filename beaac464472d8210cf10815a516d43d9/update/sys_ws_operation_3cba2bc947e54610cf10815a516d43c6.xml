@@ -4,7 +4,7 @@
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
         <default_operation_uri/>
-        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <enforce_acl/>
         <http_method>POST</http_method>
         <name>Create event</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
@@ -26,15 +26,26 @@
         <sys_created_by>david.van.damme</sys_created_by>
         <sys_created_on>2024-04-12 13:49:01</sys_created_on>
         <sys_id>3cba2bc947e54610cf10815a516d43c6</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Create event</sys_name>
         <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Based Instance Synchronizer">beaac464472d8210cf10815a516d43d9</sys_scope>
         <sys_update_name>sys_ws_operation_3cba2bc947e54610cf10815a516d43c6</sys_update_name>
         <sys_updated_by>david.van.damme</sys_updated_by>
-        <sys_updated_on>2024-04-15 10:51:28</sys_updated_on>
+        <sys_updated_on>2024-10-21 13:25:17</sys_updated_on>
         <web_service_definition display_value="Event">c70aeb8947e54610cf10815a516d434f</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3cba2bc947e54610cf10815a516d43c6</id>
+        <sys_created_by>david.van.damme</sys_created_by>
+        <sys_created_on>2024-10-21 13:25:17</sys_created_on>
+        <sys_id>6348d80f47d59e10abf1d9ca516d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.van.damme</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:25:17</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>
