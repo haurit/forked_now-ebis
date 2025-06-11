@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>true</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>ValueMapDefaultScript</name>
+        <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[class ValueMapDefaultScript extends global.AbstractAjaxProcessor {
 
 	constructor(request, responseXML, gc) {

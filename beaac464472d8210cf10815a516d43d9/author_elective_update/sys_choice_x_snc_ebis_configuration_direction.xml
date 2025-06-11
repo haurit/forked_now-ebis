@@ -6,6 +6,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>david.van.damme</sys_created_by>
             <sys_created_on>2024-06-06 13:13:00</sys_created_on>
+            <sys_id>821ba2b5c30662109ebe8d8dc0013137</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>direction</sys_name>
             <sys_package display_value="Event Based Instance Synchronizer" source="x_snc_ebis">beaac464472d8210cf10815a516d43d9</sys_package>
@@ -29,6 +30,7 @@
             <sys_created_on>2024-06-06 13:13:14</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
+            <sys_id>862b6ab5c30662109ebe8d8dc00131a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>david.van.damme</sys_updated_by>
             <sys_updated_on>2024-06-06 13:13:14</sys_updated_on>
@@ -48,6 +50,7 @@
             <sys_created_on>2024-06-06 13:13:00</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
+            <sys_id>c22b6ab5c30662109ebe8d8dc00131a4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>david.van.damme</sys_updated_by>
             <sys_updated_on>2024-06-06 13:13:00</sys_updated_on>
@@ -55,4 +58,3 @@
         </sys_choice>
     </sys_choice>
 </record_update>
-  
